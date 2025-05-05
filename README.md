@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hotel Quinto Nivel RD
 
-## Getting Started
+A full-stack hotel booking platform that allows users to explore hotel details, sign up, create, and manage their reservations.
+Hotel administrators can efficiently handle administrative tasks through a dedicated dashboard.
+The platform is fully responsive, ensuring seamless accessibility across all devices.
 
-First, run the development server:
+## Technology Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This section outlines the technologies used in the development of the application:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework**
+  - Next.js: A React-based framework used to build the front-end application, leveraging both client-side and server-side rendering for optimal performance.
+- **Services**
+  - Convex: A Backend-as-a-Service (BaaS) platform used to manage the database, file storage, and other back-end functionalities.
+  - Clerk: A service that simplifies authentication and authorization processes for users.
+- **Libraries**
+  - ShadCN: A library for integrating reusable components and implementing theming functionalities.
+  - Zustand: A lightweight state management library for managing application state.
+  - Zod: A schema validation library used to ensure data integrity.
+  - i18next: A library that enables internationalization, allowing the application to support multiple languages.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Files tree directory structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- App
+- node_modules
+- public
+- providers
 
-## Learn More
+## Public Facing Pages
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Home Page**: The main landing page showcasing the hotel's features and services.
+2. **Rooms Page**: A page displaying available rooms with details such as pricing and amenities.
+3. **Room Page**: A detailed view of a specific room, including images, descriptions, and booking options.
+4. **Sign Up Page**: A page where users can create an account to access the platform's features.
+5. **Sign In Page**: A page for existing users to log in to their accounts.
