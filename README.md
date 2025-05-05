@@ -23,10 +23,17 @@ This section outlines the technologies used in the development of the applicatio
 
 ## Files tree directory structure
 
-- App
+- app
+- components
+  - features
+  - ui
+- constants
+- lib
 - node_modules
-- public
 - providers
+- public
+- styles
+- translations
 - utils
 
 ## Public Facing Pages
