@@ -17,7 +17,7 @@ This section outlines the technologies used in the development of the applicatio
   - ShadCN: A library for integrating reusable components and implementing theming functionalities.
   - Zustand: A lightweight state management library for managing application state.
   - Zod: A schema validation library used to ensure data integrity.
-  - i18next: A library that enables internationalization, allowing the application to support multiple languages.
+  - i18n: A library that enables internationalization, allowing the application to support multiple languages.
 - **Utils**
   - Excalidraw: Used for quick prototyping
 
@@ -40,3 +40,4 @@ This section outlines the technologies used in the development of the applicatio
 ## Implementations
 
 - [x] ShadCN
+- [x] i18n - Internationalization
