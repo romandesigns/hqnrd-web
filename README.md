@@ -25,6 +25,8 @@ This section outlines the technologies used in the development of the applicatio
 
 - app
 - components
+  - site
+    - home
   - features
   - ui
 - constants
@@ -44,7 +46,9 @@ This section outlines the technologies used in the development of the applicatio
 4. **Sign Up Page**: A page where users can create an account to access the platform's features.
 5. **Sign In Page**: A page for existing users to log in to their accounts.
 
-## Implementations
+## Feature Implementations
 
 - [x] ShadCN
 - [x] i18n - Internationalization
+
+## Home page components
