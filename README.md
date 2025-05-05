@@ -18,6 +18,8 @@ This section outlines the technologies used in the development of the applicatio
   - Zustand: A lightweight state management library for managing application state.
   - Zod: A schema validation library used to ensure data integrity.
   - i18next: A library that enables internationalization, allowing the application to support multiple languages.
+- **Utils**
+  - Excalidraw: Used for quick prototyping
 
 ## Files tree directory structure
 
@@ -25,6 +27,7 @@ This section outlines the technologies used in the development of the applicatio
 - node_modules
 - public
 - providers
+- utils
 
 ## Public Facing Pages
 
@@ -33,3 +36,7 @@ This section outlines the technologies used in the development of the applicatio
 3. **Room Page**: A detailed view of a specific room, including images, descriptions, and booking options.
 4. **Sign Up Page**: A page where users can create an account to access the platform's features.
 5. **Sign In Page**: A page for existing users to log in to their accounts.
+
+## Implementations
+
+- [x] ShadCN
