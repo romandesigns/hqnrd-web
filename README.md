@@ -19,6 +19,7 @@ This section outlines the technologies used in the development of the applicatio
   - Zod: A schema validation library used to ensure data integrity.
   - i18n: A library that enables internationalization, allowing the application to support multiple languages.
 - **Utils**
+  - Custom Fonts Poppins
   - Excalidraw: Used for quick prototyping
 
 ## Files tree directory structure

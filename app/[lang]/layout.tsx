@@ -6,16 +6,8 @@ import { ModeToggle } from "@/components/features/ThemeToggle";
 import { LanguageDialogPicker } from "@/components/features/LocaleModalDialog";
 import { i18n, Locale } from "@/i18n-config";
 import { ReactNode } from "react";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { poppins } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Hotel Quinto Nivel RD",
@@ -43,15 +35,15 @@ interface LayoutProps {
 export default async function RootLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
   return (
-    <html lang={lang} suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Providers>
-          <ModeToggle />
-          <LanguageDialogPicker lang={lang} btnVariant="outline" />
-          {children}
-        </Providers>
+    <html
+      lang={lang}
+      suppressHydrationWarning
+      className={`scroll-smooth focus:scroll-auto ${poppins.className}`}
+    >
+      <body className={`${poppins.className} subpixel-antialiased`}>
+        <ScrollArea className="h-screen w-full">
+          <Providers>{children}</Providers>
+        </ScrollArea>
       </body>
     </html>
   );
