@@ -28,6 +28,7 @@ This section outlines the technologies used in the development of the applicatio
 - components
   - layout
     - ClientWrapper
+    - Container
     - Footer
     - Main
     - Navigation
@@ -45,9 +46,14 @@ This section outlines the technologies used in the development of the applicatio
 - node_modules
 - providers
 - public
+  - images
+    - brand
+    - flags
 - styles
 - translations
 - utils
+  - diagrams
+  - fonts
 
 ## Public Facing Pages
 
