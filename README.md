@@ -26,9 +26,19 @@ This section outlines the technologies used in the development of the applicatio
 
 - app
 - components
+  - layout
+    - ClientWrapper
+    - Footer
+    - Main
+    - Navigation
+      - Desktop
+      - Mobile
   - site
     - home
   - features
+    - LocaleDialog
+    - LocaleSwitcher
+    - ModeToggle
   - ui
 - constants
 - lib

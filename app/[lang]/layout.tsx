@@ -1,13 +1,10 @@
-import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "@/styles/globals.css";
-import Providers from "@/providers";
-import { ModeToggle } from "@/components/features/ThemeToggle";
-import { LanguageDialogPicker } from "@/components/features/LocaleModalDialog";
-import { i18n, Locale } from "@/i18n-config";
-import { ReactNode } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { i18n, Locale } from "@/i18n-config";
+import Providers from "@/providers";
+import "@/styles/globals.css";
 import { poppins } from "@/utils/fonts";
+import type { Metadata, Viewport } from "next";
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Hotel Quinto Nivel RD",

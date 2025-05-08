@@ -10,9 +10,9 @@ import {
 import { Locale } from "@/i18n-config";
 import { cx, VariantProps } from "class-variance-authority";
 import { Languages } from "lucide-react";
-import { LocaleSwitcher } from "./LocaleSwitcher";
+import { LocaleSwitcher } from "../LocaleSwitcher";
 
-export function LanguageDialogPicker({
+export function LocaleDialog({
   lang,
   btnVariant,
   className,
