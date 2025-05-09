@@ -1,5 +1,8 @@
 import React from "react";
 import { Desktop } from "./Desktop";
+import Container from "../Container";
+import { clsx } from "clsx";
+import { Mobile } from "./Mobile";
 
 export default function Navigation({
   className,
@@ -9,10 +12,12 @@ export default function Navigation({
   lang: string;
 }) {
   return (
-    <nav className={className}>
-      {/* Navigation */}
-      <Desktop lang={lang} />
-      <p>Navigation</p>
+    <nav className={clsx("sticky top-0 z-50 bg-background", className)}>
+      <Container>
+        {/* Navigation */}
+        <Desktop lang={lang} />
+        <Mobile lang={lang} />
+      </Container>
     </nav>
   );
 }

@@ -25,7 +25,7 @@ export function Logo({
         alt="HQNRD Logo"
       />
       {showTypography && (
-        <div className="flex flex-col justify-center items-start translate-y-1">
+        <div className="flex flex-col justify-center items-start">
           <h2 className="text-xs font-black uppercase">
             Hotel Quinto Nivel RD
           </h2>
