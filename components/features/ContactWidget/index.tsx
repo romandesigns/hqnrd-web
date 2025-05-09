@@ -4,8 +4,9 @@ import { cn } from "@/lib/utils";
 import { MenuItem } from "@/components/features/Menu";
 import { LocaleDialog } from "../LocaleDialog";
 import { ExternalLink } from "../ExternalLink";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Map, Mail } from "lucide-react";
 import { hqnrd } from "@/constants";
+import { VariantProps } from "class-variance-authority";
 
 export function ContactWidget({
   lang,
@@ -19,7 +20,7 @@ export function ContactWidget({
   direction?: "horizontal" | "vertical";
   showBorders?: boolean;
   className?: string;
-  btnVariant?: "default" | "ghost" | "outline";
+  btnVariant?: VariantProps<typeof Button>["variant"];
   btnClassNames?: string;
 }) {
   return (
@@ -40,7 +41,7 @@ export function ContactWidget({
             asChild
           >
             <ExternalLink href={hqnrd.contact.googleMap}>
-              <MessageCircle />
+              <Map />
             </ExternalLink>
           </Button>
         </MenuItem>
@@ -69,7 +70,7 @@ export function ContactWidget({
             className={cn(btnClassNames)}
           >
             <ExternalLink href={hqnrd.contact.email}>
-              <MessageCircle />
+              <Mail />
             </ExternalLink>
           </Button>
         </MenuItem>
