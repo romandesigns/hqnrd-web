@@ -1,10 +1,10 @@
 import { Logo, ModeToggle } from "@/components/features";
 import { CartBookings } from "@/components/features/CartBookings";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Locale } from "@/i18n-config";
-import { Menu } from "lucide-react";
 import Link from "next/link";
 import Container from "../../Container";
+import { Mobile } from "../Mobile";
 
 export function NavigationMenu({ lang }: { lang: Locale }) {
   return (
@@ -43,11 +43,8 @@ export function NavigationMenu({ lang }: { lang: Locale }) {
         <li>
           <CartBookings btnVariant="outline" />
         </li>
-
         <li className="block md:hidden">
-          <Button variant="outline" size="icon">
-            <Menu />
-          </Button>
+          <Mobile lang={"en"} />
         </li>
       </ul>
     </Container>

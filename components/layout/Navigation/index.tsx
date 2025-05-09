@@ -16,7 +16,6 @@ export default function Navigation({
       <Container>
         {/* Navigation */}
         <Desktop lang={lang} />
-        <Mobile lang={lang} />
       </Container>
     </nav>
   );
