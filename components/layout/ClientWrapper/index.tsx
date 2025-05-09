@@ -12,6 +12,7 @@ export default function ClientWrapper({
   mainClassName,
   navigationClassName,
   footerClassName,
+  lang,
 }: {
   children: ReactNode;
   showNavigation?: boolean;
@@ -19,12 +20,15 @@ export default function ClientWrapper({
   mainClassName?: string;
   navigationClassName?: string;
   footerClassName?: string;
+  lang: string;
 }) {
   return (
     <>
-      {showNavigation && <Navigation className={navigationClassName} />}
+      {showNavigation && (
+        <Navigation className={navigationClassName} lang={lang} />
+      )}
       <Main className={mainClassName}>{children}</Main>
-      {showFooter && <Footer className={footerClassName} />}
+      {showFooter && <Footer className={footerClassName} lang={lang} />}
     </>
   );
 }

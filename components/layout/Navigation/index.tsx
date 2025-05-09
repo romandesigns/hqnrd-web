@@ -1,11 +1,17 @@
 import React from "react";
 import { Desktop } from "./Desktop";
 
-export default function Navigation({ className }: { className?: string }) {
+export default function Navigation({
+  className,
+  lang,
+}: {
+  className?: string;
+  lang: string;
+}) {
   return (
     <nav className={className}>
       {/* Navigation */}
-      <Desktop />
+      <Desktop lang={lang} />
       <p>Navigation</p>
     </nav>
   );

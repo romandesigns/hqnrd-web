@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Footer({ className }: { className?: string }) {
+export default function Footer({
+  className,
+  lang,
+}: {
+  className?: string;
+  lang: string;
+}) {
   return (
     <footer className={className}>
       {/* Footer */}
