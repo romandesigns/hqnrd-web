@@ -11,7 +11,7 @@ export default function Container({
   children: ReactNode;
 }) {
   return (
-    <section className={clsx("", containerClass)}>
+    <section className={clsx(containerClass)}>
       <div
         className={clsx(
           "w-full max-w-[var(--max-w-container)] mx-auto",

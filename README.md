@@ -67,5 +67,10 @@ This section outlines the technologies used in the development of the applicatio
 
 - [x] ShadCN
 - [x] i18n - Internationalization
+- [x] Responsive Navigation
 
 ## Home page components
+
+- [] Header
+  - [] Compiwritting
+  - [] Slideshow
