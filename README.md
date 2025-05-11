@@ -32,8 +32,9 @@ This section outlines the technologies used in the development of the applicatio
     - Footer
     - Main
     - Navigation
-      - Desktop
-      - Mobile
+  - magicui
+    - Desktop
+    - Mobile
   - site
     - home
   - features

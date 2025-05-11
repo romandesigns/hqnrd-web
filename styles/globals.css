@@ -80,6 +80,13 @@
   /* Utilities */
   --max-w-container: 100rem;
   --header-home-height: 40rem;
+
+  /* Functional Palette */
+  --warning: oklch(0.828 0.189 84.429);
+  --error: oklch(0.577 0.25 7.325);
+  --success: oklch(0.488 0.243 264.376);
+  --info: oklch(0.6 0.118 184.704);
+  --neutral: oklch(0.967 0.003 264.542);
 }
 
 .dark {
