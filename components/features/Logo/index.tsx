@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export function Logo({
   height = 25,
@@ -23,7 +23,10 @@ export function Logo({
         height={height}
         width={width}
         alt="HQNRD Logo"
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       {showTypography && (
         <div className="flex flex-col justify-center items-start">
           <h2 className="text-xs font-black uppercase">

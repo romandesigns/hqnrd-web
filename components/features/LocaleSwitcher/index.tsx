@@ -5,7 +5,7 @@ import cn from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { twMerge } from "tailwind-merge";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export const redirectedPathName = (locale: Locale, pathName: string) => {
   if (!pathName) return "/";
@@ -40,7 +40,10 @@ export function LocaleSwitcher({ lang }: { lang: string }) {
                     height={120}
                     alt="Image"
                     className="object-cover"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
                 <p className="font-medium">
                   {locale === "en" ? "English" : "Spanish"}

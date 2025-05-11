@@ -1,5 +1,5 @@
 import { hqnrd } from "@/constants";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export const ImageSlideList = ({ images }: { images: string[] }) => (
   <>
@@ -12,8 +12,8 @@ export const ImageSlideList = ({ images }: { images: string[] }) => (
           src={image}
           alt={`${hqnrd.name.long} slide-show-${index + 1}`}
           className="object-cover"
-          layout="fill"
-        />
+          fill
+          sizes="100vw" />
       </div>
     ))}
   </>

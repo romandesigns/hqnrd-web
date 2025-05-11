@@ -5,7 +5,7 @@ import { Locale } from "@/i18n-config";
 import { enUS, es } from "date-fns/locale";
 import React from "react";
 import { FormLabel } from "./CustomLabel";
-import { DateTimePicker } from "./DateTime";
+import { DateTimePicker, Granularity } from "./DateTime";
 
 export function DateAndTimePicker({
   lang,
@@ -39,9 +39,9 @@ export function DateAndTimePicker({
   );
 
   return (
-    <Label className="!m-0 flex-1" htmlFor="date">
+    <Label className="!m-0 flex-1 flex-col pb-0" htmlFor="date">
       {icon === "calendar" ? (
-        <div className="flex items-center justify-start gap-3 pb-2">
+        <div className="flex items-center justify-start gap-3 w-full">
           <FaCalendar />
           <FormLabel label={label} />
         </div>

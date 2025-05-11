@@ -8,8 +8,6 @@ export function FormLabel({
   className?: string;
 }) {
   return (
-    <p className={`mb-1.5 text-xs text-muted-foreground ${className}`}>
-      {label}
-    </p>
+    <p className={`text-xs text-muted-foreground ${className}`}>{label}</p>
   );
 }

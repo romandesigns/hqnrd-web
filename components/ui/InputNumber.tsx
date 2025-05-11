@@ -39,10 +39,10 @@ export function InputNumber({
       <div className="flex items-center justify-center rounded-md">
         <div className="flex">
           <Button
-            type="button" // Prevents form submission
+            type="button"
             size="icon"
             variant="outline"
-            className="rounded-r-none bg-transparent px-5"
+            className="rounded-r-none bg-transparent px-5 py-[1.1rem]"
             onClick={increment}
           >
             <FaChevronUp />
@@ -58,11 +58,11 @@ export function InputNumber({
           }`}
         />
         <Button
-          type="button" // Prevents form submission
+          type="button"
           disabled={count === 0}
           size="icon"
           variant="outline"
-          className="rounded-l-none rounded-r-md bg-transparent px-5"
+          className="rounded-l-none rounded-r-md bg-transparent px-5 py-[1.1rem]"
           onClick={decrement}
         >
           <FaChevronDown />
