@@ -37,9 +37,15 @@ This section outlines the technologies used in the development of the applicatio
   - site
     - home
   - features
+    - Cartbookings
+    - ContactWidget
+    - ExternalLink
     - LocaleDialog
     - LocaleSwitcher
+    - Logo
+    - Menu
     - ModeToggle
+    - Swiper
   - ui
 - constants
 - lib
