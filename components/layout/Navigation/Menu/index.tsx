@@ -1,6 +1,6 @@
 import { Logo, ModeToggle } from "@/components/features";
 import { CartBookings } from "@/components/features/CartBookings";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Locale } from "@/i18n-config";
 import Link from "next/link";
 import Container from "../../Container";
@@ -14,27 +14,31 @@ export function NavigationMenu({ lang }: { lang: Locale }) {
           <Logo height={20} width={20} />
         </li>
         <li className="hidden md:block">
-          <Link
-            href={`/${lang}`}
-            className={buttonVariants({ variant: "ghost" })}
-          >
-            Inicio
+          <Link href={`/${lang}`}>
+            <Button variant="link" className="text-xs font-bold">
+              Inicio
+            </Button>
           </Link>
         </li>
         <li className="hidden md:block">
-          <Link
-            href={`/${lang}/habitaciones`}
-            className={buttonVariants({ variant: "ghost" })}
-          >
-            Habitaciones
+          <Link href={`/${lang}/habitaciones`}>
+            <Button variant="link" className="text-xs font-bold">
+              Habitaciones
+            </Button>
           </Link>
         </li>
         <li className="hidden md:block">
-          <Link
-            href={`/${lang}/signin`}
-            className={buttonVariants({ variant: "secondary" })}
-          >
-            Cerrar Sesión
+          <Link href={`/${lang}/iniciar-sesion`}>
+            <Button variant="secondary" className="text-xs font-bold">
+              Cerrar Sesión
+            </Button>
+          </Link>
+        </li>
+        <li className="hidden md:block">
+          <Link href={`/${lang}/crear-cuenta`}>
+            <Button variant="outline" className="text-xs font-bold">
+              Crear Cuenta
+            </Button>
           </Link>
         </li>
         <li>

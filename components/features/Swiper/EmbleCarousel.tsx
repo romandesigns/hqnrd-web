@@ -15,7 +15,7 @@ type EmblaCarouselProps = {
   children: React.ReactNode[];
 };
 
-export default function EmblaCarousel({
+export function EmblaCarousel({
   className,
   slideClassName,
   options = {},

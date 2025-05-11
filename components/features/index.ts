@@ -1,3 +1,6 @@
+export { GoogleStats } from "./GoogleStats";
+export { StarsRating } from "./StarsRating";
+export { EmblaCarousel } from "./Swiper/EmbleCarousel";
 export { LocaleDialog } from "./LocaleDialog";
 export { LocaleSwitcher } from "./LocaleSwitcher";
 export { ModeToggle } from "./ModeToggle";

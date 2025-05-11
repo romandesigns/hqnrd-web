@@ -6,8 +6,8 @@ import {
   FaUser,
 } from "@/components/icons";
 import React from "react";
-import { Button } from "../button";
-import { Input } from "../input";
+import { Button } from "./button";
+import { Input } from "./input";
 
 export function InputNumber({
   inputNumberLabel,
