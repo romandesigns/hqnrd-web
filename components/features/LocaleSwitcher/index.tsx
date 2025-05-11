@@ -5,7 +5,7 @@ import cn from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { twMerge } from "tailwind-merge";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const redirectedPathName = (locale: Locale, pathName: string) => {
   if (!pathName) return "/";
