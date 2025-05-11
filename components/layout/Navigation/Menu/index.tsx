@@ -5,11 +5,12 @@ import { Locale } from "@/i18n-config";
 import Link from "next/link";
 import Container from "../../Container";
 import { Mobile } from "../Mobile";
+import { Content } from "../..";
 
 export function NavigationMenu({ lang }: { lang: Locale }) {
   return (
-    <Container>
-      <ul className="p-4 py-3 rounded-bl-md rounded-br-md flex items-center justify-start gap-2 text-sm">
+    <Content wrapperClass="!py-0">
+      <ul className="lg:py-1 rounded-bl-md rounded-br-md flex items-center justify-start gap-2 text-sm">
         <li className="mr-auto">
           <Logo height={20} width={20} />
         </li>
@@ -51,6 +52,6 @@ export function NavigationMenu({ lang }: { lang: Locale }) {
           <Mobile lang={"en"} />
         </li>
       </ul>
-    </Container>
+    </Content>
   );
 }

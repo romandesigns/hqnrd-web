@@ -1,6 +1,7 @@
 import { clsx } from "clsx";
 import Container from "../Container";
 import { Desktop } from "./Desktop";
+import { Content } from "..";
 
 export default function Navigation({
   className,
@@ -16,10 +17,10 @@ export default function Navigation({
         className
       )}
     >
-      <Container>
+      <Content>
         {/* Navigation */}
         <Desktop lang={lang} />
-      </Container>
+      </Content>
     </nav>
   );
 }

@@ -1,5 +1,6 @@
 import { ClientWrapper, Main } from "@/components/layout";
 import { Header, RoomsFilter } from "@/components/site/home";
+import { Reviews } from "@/components/site/home/Reviews";
 import { Locale } from "@/i18n-config";
 
 interface LayoutProps {
@@ -16,6 +17,7 @@ export default async function Home({ params }: LayoutProps) {
       <Header lang={lang} />
       <Main>
         <RoomsFilter lang={lang} />
+        <Reviews lang={lang} />
       </Main>
     </ClientWrapper>
   );
