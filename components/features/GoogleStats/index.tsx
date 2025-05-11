@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { StarsRating } from "../StarsRating";
 import { NumberTicker } from "@/components/magicui/number-ticker";
 import { FcGoogle } from "@/components/icons";

@@ -8,7 +8,6 @@ import useEmblaCarousel from "embla-carousel-react";
 type PropTypes = {
   axis: EmblaOptionsType["axis"];
   slideWrapperClassName?: string;
-  slideClassName?: string;
   delay?: number;
   children: React.ReactNode;
 };
@@ -16,7 +15,6 @@ type PropTypes = {
 export default function Swiper({
   axis,
   slideWrapperClassName,
-  slideClassName,
   delay = 5000,
   children,
 }: PropTypes) {

@@ -1,14 +1,10 @@
-import Swiper from "@/components/features/Swiper";
-import Container from "@/components/layout/Container";
-import Particles from "@/components/ui/particles";
-import { ImageSlideList } from "@/helpers/ImageSlideList";
-import { images } from "@/helpers/localImages";
-import { Locale } from "@/i18n-config";
-import { Gallery } from "./Gallery";
+import { ContactWidget } from "@/components/features";
 import { GoogleStats } from "@/components/features/GoogleStats";
 import { FaLocationDot } from "@/components/icons";
+import Container from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
-import { ContactWidget } from "@/components/features";
+import { Locale } from "@/i18n-config";
+import { Gallery } from "./Gallery";
 
 export default function Header({ lang }: { lang: Locale }) {
   return (
@@ -32,8 +28,8 @@ export default function Header({ lang }: { lang: Locale }) {
               rooms have you covered. Visit us today!
             </p>
           </div>
-          <div className="flex gap-20 flex-col items-start w-full">
-            <div className="flex gap-4 w-full">
+          <div className="flex gap-20 flex-col items-stretch lg:items-start w-full justify-stretch lg:justify-start">
+            <div className="flex gap-4">
               <Button className="flex-1">Explore Rooms</Button>
               <Button className="flex-1" variant="secondary">
                 Contact Us
@@ -41,7 +37,7 @@ export default function Header({ lang }: { lang: Locale }) {
             </div>
             <ContactWidget
               lang={lang}
-              btnVariant="outline"
+              btnVariant="secondary"
               className="w-full justify-start flex-row [&_ul]:p-0 hidden lg:flex"
             />
           </div>

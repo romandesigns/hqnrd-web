@@ -1,8 +1,6 @@
-import React from "react";
-import { Desktop } from "./Desktop";
-import Container from "../Container";
 import { clsx } from "clsx";
-import { Mobile } from "./Mobile";
+import Container from "../Container";
+import { Desktop } from "./Desktop";
 
 export default function Navigation({
   className,

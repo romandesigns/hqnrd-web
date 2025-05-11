@@ -28,7 +28,7 @@ export default function ClientWrapper({
         <Navigation className={navigationClassName} lang={lang} />
       )}
       <Main className={mainClassName}>{children}</Main>
-      {showFooter && <Footer className={footerClassName} lang={lang} />}
+      {showFooter && <Footer className={footerClassName} />}
     </>
   );
 }
