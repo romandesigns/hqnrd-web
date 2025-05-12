@@ -34,7 +34,7 @@ export default function Swiper({
     <div ref={emblaRef} className="w-full h-full overflow-hidden rounded-lg">
       <div
         className={clsx(
-          "touch-pan-y h-full w-full",
+          "",
           isHorizontal ? "flex" : "flex flex-col",
           slideWrapperClassName
         )}

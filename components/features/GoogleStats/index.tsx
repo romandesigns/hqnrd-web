@@ -18,8 +18,8 @@ export function GoogleStats({
   ratingsCount: number;
 }) {
   return (
-    <div className="flex w-full flex-col items-center md:items-start">
-      <div className="flex items-center gap-2 md:justify-start">
+    <div className="flex w-full flex-col items-center lg:items-start">
+      <div className="flex items-center gap-2 lg:justify-start">
         <FcGoogle />
         <span className="font-black">
           <NumberTicker decimalPlaces={2} value={ratingsCount} />{" "}
