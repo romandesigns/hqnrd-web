@@ -1,7 +1,6 @@
 import { clsx } from "clsx";
-import Container from "../Container";
-import { Desktop } from "./Desktop";
 import { Content } from "..";
+import { Desktop } from "./Desktop";
 
 export default function Navigation({
   className,

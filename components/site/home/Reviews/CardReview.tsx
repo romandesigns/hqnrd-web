@@ -4,11 +4,9 @@ import React from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
 import { StarsRating } from "@/components/features";
 
-import useEmblaCarousel from "embla-carousel-react";
 import clsx from "clsx";
 
 export function CardReview({
-  className,
   flexBasis,
 }: {
   className?: string;

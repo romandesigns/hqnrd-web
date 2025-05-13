@@ -1,11 +1,10 @@
 import { Logo, ModeToggle } from "@/components/features";
 import { CartBookings } from "@/components/features/CartBookings";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Locale } from "@/i18n-config";
 import Link from "next/link";
-import Container from "../../Container";
-import { Mobile } from "../Mobile";
 import { Content } from "../..";
+import { Mobile } from "../Mobile";
 
 export function NavigationMenu({ lang }: { lang: Locale }) {
   return (

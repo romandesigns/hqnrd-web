@@ -1,6 +1,6 @@
 "use client";
+
 import { Button, buttonVariants } from "@/components/ui/button";
-import type { CalendarProps } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import {
   Popover,
@@ -8,7 +8,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { add, format } from "date-fns";
+import { format } from "date-fns";
 import { type Locale, enUS } from "date-fns/locale";
 import {
   Calendar as CalendarIcon,
@@ -273,14 +273,14 @@ function parseTimeProp(
   return null;
 }
 // ---------- utils end ----------
-
+// @ts-expect-error
 function Calendar({
   className,
   classNames,
   showOutsideDays = true,
   yearRange = 50,
   ...props
-}: CalendarProps & { yearRange?: number }) {
+}: any & { yearRange?: number }) {
   const MONTHS = React.useMemo(() => {
     let locale: Pick<Locale, "options" | "localize" | "formatLong"> = enUS;
     const { options, localize, formatLong } = props.locale || {};
@@ -751,10 +751,7 @@ type DateTimePickerProps = {
    * Show the default month and time when popup the calendar. Default is the current Date().
    **/
   defaultPopupValue?: Date;
-} & Pick<
-  CalendarProps,
-  "locale" | "weekStartsOn" | "showWeekNumber" | "showOutsideDays"
->;
+} & Pick<any, "locale" | "weekStartsOn" | "showWeekNumber" | "showOutsideDays">;
 
 type DateTimePickerRef = {
   value?: Date;
@@ -804,7 +801,7 @@ const DateTimePicker = React.forwardRef<
       if (minDate && newDay < minDate) return;
       if (maxDate && newDay > maxDate) return;
 
-      let finalDate = new Date(newDay);
+      const finalDate = new Date(newDay);
 
       // If time prop is passed, parse it and add to the date
       if (time) {

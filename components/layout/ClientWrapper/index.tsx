@@ -1,9 +1,8 @@
 "use client";
 
-import React, { ReactNode } from "react";
-import Navigation from "../Navigation";
-import Main from "../Main";
+import { ReactNode } from "react";
 import Footer from "../Footer";
+import Navigation from "../Navigation";
 
 export default function ClientWrapper({
   children,

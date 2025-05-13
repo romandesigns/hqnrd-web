@@ -17,7 +17,7 @@ export default async function Home({ params }: LayoutProps) {
       <Header lang={lang} />
       <Main>
         <RoomsFilter lang={lang} />
-        <Reviews lang={lang} />
+        <Reviews />
       </Main>
     </ClientWrapper>
   );
