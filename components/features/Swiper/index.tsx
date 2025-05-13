@@ -31,11 +31,11 @@ export default function Swiper({
   const isHorizontal = axis === "x";
 
   return (
-    <div ref={emblaRef} className="w-full h-full overflow-hidden rounded-lg">
+    <div ref={emblaRef} className="overflow-hidden rounded-lg w-full h-full">
       <div
         className={clsx(
-          "",
-          isHorizontal ? "flex" : "flex flex-col",
+          "w-full h-full",
+          isHorizontal ? "flex flex-row" : "flex  flex-col",
           slideWrapperClassName
         )}
       >
