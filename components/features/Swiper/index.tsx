@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import type { EmblaOptionsType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 
 type PropTypes = {
@@ -10,6 +11,7 @@ type PropTypes = {
   slideWrapperClassName?: string;
   delay?: number;
   children: React.ReactNode;
+  autoScroll?: boolean;
 };
 
 export default function Swiper({
@@ -17,6 +19,7 @@ export default function Swiper({
   slideWrapperClassName,
   delay = 5000,
   children,
+  autoScroll = false,
 }: PropTypes) {
   const options: EmblaOptionsType = {
     loop: true,
@@ -24,9 +27,21 @@ export default function Swiper({
     align: "start",
   };
 
-  const [emblaRef] = useEmblaCarousel(options, [
+  const plugins: NonNullable<
+    ReturnType<typeof Autoplay | typeof AutoScroll>
+  >[] = [
     Autoplay({ delay, stopOnInteraction: false }),
-  ]);
+    autoScroll
+      ? AutoScroll({
+          speed: 0.5,
+          stopOnInteraction: false,
+        })
+      : undefined,
+  ].filter(Boolean) as NonNullable<
+    ReturnType<typeof Autoplay | typeof AutoScroll>
+  >[];
+
+  const [emblaRef] = useEmblaCarousel(options, plugins);
 
   const isHorizontal = axis === "x";
 
@@ -35,7 +50,7 @@ export default function Swiper({
       <div
         className={clsx(
           "w-full h-full",
-          isHorizontal ? "flex flex-row" : "flex  flex-col",
+          isHorizontal ? "flex flex-row" : "flex flex-col",
           slideWrapperClassName
         )}
       >

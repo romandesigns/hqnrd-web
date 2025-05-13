@@ -24,13 +24,12 @@ export function Reviews({ lang }: { lang: Locale }) {
         className="mb-8"
       />
       <Content>
-        <div className="overflow-hidden w-full max-w-[340px] min-[630px]:max-w-[650px] pr-1 bg-yellow-200 mx-auto">
-          {/* <Swiper axis="x" delay={5000}>
-            <CardReview flexBasis="min-[630px]:flex-[0_0_90%] flex-[0_0_100%]" />
-          </Swiper> */}
+        <div className="overflow-hidden w-full max-w-[340px] min-[630px]:max-w-[650px] pr-1 min-[412px]:max-w-[380px] min-[480px]:max-w-[450px]  min-[520px]:max-w-[500px] sm:max-w-[730px] lg:max-w-[930px]  xl:max-w-[1230px]  mx-auto">
+          <Swiper axis="x" delay={5000} autoScroll>
+            <CardReview flexBasis="flex-[0_0_100%] sm:flex-[0_0_50%] xl:flex-[0_0_40%]" />
+          </Swiper>
         </div>
       </Content>
     </Container>
   );
 }
-// <CardReview />
