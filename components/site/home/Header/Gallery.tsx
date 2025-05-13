@@ -5,7 +5,7 @@ import React from "react";
 
 export function Gallery() {
   return (
-    <article className="relative flex h-auto w-full items-center justify-center mt-4 sm:mt-0 max-lg:max-w-2xl max-lg:mx-auto">
+    <article className="relative flex h-auto w-full items-center justify-center mt-4 sm:mt-0 max-lg:max-w-3xl max-lg:mx-auto">
       {/* Top left image */}
       <figure className="absolute top-2 left-2 lg:top-6 lg:left-6 aspect-square h-auto w-[25%] rounded-md border-10 lg:border-14 border-muted bg-transparent" />
       {/* Top Right image */}
