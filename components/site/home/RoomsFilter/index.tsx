@@ -10,11 +10,8 @@ import Form from "next/form";
 export function RoomsFilter({ lang }: { lang: Locale }) {
   return (
     <>
-      <Container containerClass="max-w-4xl mx-auto">
+      <Container containerClass="max-w-4xl mx-auto lg:py-0">
         <Content wrapperClass="px-4">
-          <h2 className="py-6 text-center text-2xl font-bold ">
-            Start booking today!
-          </h2>
           <article className="h-full w-full rounded-lg border bg-secondary p-2 max-[754px]:flex max-[754px]:flex-col">
             <Form
               action={`/${lang}/habitaciones`}
@@ -49,7 +46,7 @@ export function RoomsFilter({ lang }: { lang: Locale }) {
                   className="mt-5 p-5 lg:p-4.25 sm:hidden lg:flex"
                   type="submit"
                 >
-                  Search Room
+                  Search
                 </Button>
                 <Button
                   size="icon"

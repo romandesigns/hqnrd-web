@@ -19,10 +19,10 @@ export function CopyWritting({ lang }: { lang: Locale }) {
           />{" "}
           In Salcedo, Republica Dominicana
         </p>
-        <h2 className="font-black text-2xl text-center lg:text-left lg:text-5xl my-4">
+        <h2 className="font-black text-2xl text-center lg:text-left lg:text-4xl my-4">
           UNMACHED COMFORT AND ELEGANCE AWAIT!
         </h2>
-        <p className="text-xs lg:text-sm max-w-2xl text-center lg:text-left w-full text-muted-foreground max-lg:max-w-md max-lg:mx-auto">
+        <p className="text-xs lg:text-sm max-w-2xl text-center lg:text-left w-full text-muted-foreground max-lg:max-w-md max-lg:mx-auto xl:max">
           Traveling solo, with family, or on a romantic getaway? Our premium
           rooms have you covered. Visit us today!
         </p>
