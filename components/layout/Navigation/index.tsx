@@ -16,10 +16,8 @@ export default function Navigation({
         className
       )}
     >
-      <Content>
-        {/* Navigation */}
-        <Desktop lang={lang} />
-      </Content>
+      {/* Navigation */}
+      <Desktop lang={lang} />
     </nav>
   );
 }

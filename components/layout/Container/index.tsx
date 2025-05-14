@@ -2,13 +2,11 @@ import { clsx } from "clsx";
 import React, { ReactNode } from "react";
 
 export default function Container({
-  containerClass,
+  className,
   children,
 }: {
-  containerClass?: string;
+  className?: string;
   children: ReactNode;
 }) {
-  return (
-    <section className={clsx("py-10", containerClass)}>{children}</section>
-  );
+  return <section className={clsx("py-10", className)}>{children}</section>;
 }

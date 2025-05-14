@@ -9,9 +9,9 @@ import Form from "next/form";
 
 export function RoomsFilter({ lang }: { lang: Locale }) {
   return (
-    <>
-      <Container containerClass="max-w-4xl mx-auto lg:py-0">
-        <Content wrapperClass="px-4">
+    <Container className="max-w-4xl mx-auto lg:py-0">
+      <Content className="px-4">
+        <div className="bg-linear-to-b from-secondary/0 via-secondary/10 to-[var(--card)]/50 rounded-md p-4">
           <article className="h-full w-full rounded-lg border bg-secondary p-2 max-[754px]:flex max-[754px]:flex-col">
             <Form
               action={`/${lang}/habitaciones`}
@@ -50,15 +50,15 @@ export function RoomsFilter({ lang }: { lang: Locale }) {
                 </Button>
                 <Button
                   size="icon"
-                  className="min-[641px]:flex  justify-center items-center self-end hidden lg:hidden"
+                  className="min-[641px]:flex justify-center items-center self-end hidden lg:hidden"
                 >
                   <Search />
                 </Button>
               </div>
             </Form>
           </article>
-        </Content>
-      </Container>
-    </>
+        </div>
+      </Content>
+    </Container>
   );
 }

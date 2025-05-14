@@ -8,7 +8,7 @@ import { Mobile } from "../Mobile";
 
 export function NavigationMenu({ lang }: { lang: Locale }) {
   return (
-    <Content wrapperClass="!py-0">
+    <Content className="!py-2">
       <ul className="lg:py-1 rounded-bl-md rounded-br-md flex items-center justify-start gap-2 text-sm">
         <li className="mr-auto">
           <Logo height={20} width={20} />

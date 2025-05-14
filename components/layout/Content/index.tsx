@@ -1,22 +1,21 @@
 import { clsx } from "clsx";
 import React, { ReactNode } from "react";
 
-export default function Container({
-  wrapperClass,
+export default function Content({
+  className,
   children,
 }: {
-  containerClass?: string;
-  wrapperClass?: string;
+  className?: string;
   children: ReactNode;
 }) {
   return (
-    <section
+    <div
       className={clsx(
         "w-full max-w-[var(--max-w-container)] mx-auto p-2 py-10",
-        wrapperClass
+        className
       )}
     >
       {children}
-    </section>
+    </div>
   );
 }
