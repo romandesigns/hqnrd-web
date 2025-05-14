@@ -2,6 +2,7 @@ import { ClientWrapper, Main } from "@/components/layout";
 import { Discounts, Header, RoomsFilter } from "@/components/site/home";
 import { Categories } from "@/components/site/home/Categories";
 import { Reviews } from "@/components/site/home/Reviews";
+import { ScenicSpaces } from "@/components/site/home/ScenicSpaces";
 import { Locale } from "@/i18n-config";
 
 interface LayoutProps {
@@ -21,6 +22,7 @@ export default async function Home({ params }: LayoutProps) {
         <Reviews />
         <Discounts lang={lang} />
         <Categories lang={lang} />
+        <ScenicSpaces />
       </Main>
     </ClientWrapper>
   );

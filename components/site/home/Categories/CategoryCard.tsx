@@ -38,7 +38,7 @@ export function CategoryCard({
       </div>
       <div className="p-2 pt-0">
         <Button size="full" className="uppercase text-xs font-bold">
-          View Categories
+          Ver categorias
         </Button>
       </div>
     </article>
