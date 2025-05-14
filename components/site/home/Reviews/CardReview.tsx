@@ -8,12 +8,13 @@ import clsx from "clsx";
 
 export function CardReview({
   flexBasis,
+  items,
 }: {
   className?: string;
   flexBasis?: string;
+  items: number[];
 }): React.JSX.Element[] {
-  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  return items.map((item) => (
+  return items?.map((item) => (
     <div className={clsx(`flex gap-2 min-w-0`, flexBasis)} key={item}>
       <div className="border ml-2 bg-[var(--card)] rounded-md">
         <div className="p-1">
