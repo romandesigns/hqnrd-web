@@ -32,18 +32,18 @@ export function SectionHeading({
       )}
     >
       <div className="mb-3 flex w-full items-center justify-center">
-        {showBorders && <div className="h-[0.10rem] w-1/5 bg-muted/25" />}
+        {showBorders && <div className="h-[0.15rem] w-1/5 bg-muted/25" />}
         <div>
           <div className="mx-2 rounded-full bg-muted/90 px-6 py-1 text-primary-muted">
             <p className="text-xs lg:text-sm font-bold">{title}</p>
           </div>
         </div>
-        {showBorders && <div className="h-[0.10rem] w-1/5 bg-muted/25" />}
+        {showBorders && <div className="h-[0.15rem] w-1/5 bg-muted/25" />}
       </div>
       {description && (
         <small
           className={cn(
-            `md:text-md post_title text-center text-xs font-medium text-muted-muted`,
+            `md:text-sm post_title text-center text-xs font-medium`,
             postTitleClassName
           )}
         >

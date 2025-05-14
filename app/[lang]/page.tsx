@@ -1,5 +1,5 @@
 import { ClientWrapper, Main } from "@/components/layout";
-import { Header, RoomsFilter } from "@/components/site/home";
+import { Discounts, Header, RoomsFilter } from "@/components/site/home";
 import { Reviews } from "@/components/site/home/Reviews";
 import { Locale } from "@/i18n-config";
 
@@ -18,6 +18,7 @@ export default async function Home({ params }: LayoutProps) {
       <Main>
         <RoomsFilter lang={lang} />
         <Reviews />
+        <Discounts lang={lang} />
       </Main>
     </ClientWrapper>
   );

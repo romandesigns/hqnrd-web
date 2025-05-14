@@ -10,13 +10,13 @@ export default function Container({
   children: ReactNode;
 }) {
   return (
-    <div
+    <section
       className={clsx(
-        "w-full max-w-[var(--max-w-container)] mx-auto p-2",
+        "w-full max-w-[var(--max-w-container)] mx-auto p-2 py-10",
         wrapperClass
       )}
     >
       {children}
-    </div>
+    </section>
   );
 }
