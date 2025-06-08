@@ -28,6 +28,9 @@ export default function Footer({
           <Map />
         </div>
         <Fqa />
+        <div className='text-xs text-center mt-10 text-muted-foreground'>
+          Designed and developed by WavyStack
+        </div>
       </Content>
     </footer>
   )

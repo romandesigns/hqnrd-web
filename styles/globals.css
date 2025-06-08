@@ -151,3 +151,9 @@
     line-height: 1.8;
   }
 }
+
+@layer components {
+  .icon-highlight {
+    @apply border p-1 rounded-sm bg-primary/20;
+  }
+}
