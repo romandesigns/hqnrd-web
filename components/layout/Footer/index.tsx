@@ -4,5 +4,5 @@ export default function Footer({ className }: { className?: string }) {
       {/* Footer */}
       <p>Footer</p>
     </footer>
-  );
+  )
 }
