@@ -13,7 +13,7 @@ interface LayoutProps {
 }
 
 export default async function Page({ params }: LayoutProps) {
-  const { lang, category } = await params
+  const { lang } = await params
 
   return (
     <ClientWrapper showNavigation showFooter lang={lang}>
@@ -51,7 +51,7 @@ export default async function Page({ params }: LayoutProps) {
         </Content>
       </Header>
       <Main>
-        <Content>Main Component</Content>
+        <Content>Selected Categories</Content>
       </Main>
     </ClientWrapper>
   )

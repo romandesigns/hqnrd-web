@@ -1,8 +1,8 @@
 'use client'
+
 import * as React from 'react'
-import { useRouter, useSearchParams } from 'next/navigation'
 import { Check, ChevronsUpDown } from 'lucide-react'
-import { cn, removePluralSuffix } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import {
   Command,
@@ -18,39 +18,26 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 import { Locale } from '@/i18n-config'
-
-import roomsData from '@/public/data/rooms.json'
 import { hqnrd } from '@/constants'
+import { useRouter } from 'next/navigation'
 
-export function CategorySelect({ lang }: { lang: Locale }) {
+type CategorySelectProps = {
+  lang: Locale
+  category: string | null // selected slug
+}
+
+export function CategorySelect({ lang, value, category }: CategorySelectProps) {
   const [open, setOpen] = React.useState(false)
-  const searchParams = useSearchParams().get('categoria')
-  const [value, setValue] = React.useState(searchParams || 'ver-todas')
+  const selectedCategory = hqnrd.categories.find(
+    cat => cat.label.toLowerCase() === category?.toLowerCase(),
+  )
   const router = useRouter()
 
-  const getRoomsLabel = () => hqnrd.categories.map(cat => cat.label)
-
-  const handleSelectedCategory = (categoryValue: string) => {
-    const newValue = categoryValue === value ? 'ver-todas' : categoryValue
-    if (categoryValue) {
-      setValue(newValue)
-      setOpen(false)
-      router.push(`/${lang}/habitaciones?categoria=${newValue}`)
-    }
-    if (!categoryValue) {
-      setOpen(false)
-      router.push(`/${lang}/habitaciones`)
-    }
+  const handleSelect = (category: { label: string; slug: string }) => {
+    setOpen(false)
+    console.log(category)
+    router.push(`/${lang}/habitaciones/${category.slug}`)
   }
-  console.log(getRoomsLabel())
-  //   const filteredRoomsBySlug = (slug: string | undefined) => {
-  //     if (slug === 'ver-todas' || slug === undefined) {
-  //       return roomsData.rooms
-  //     }
-  //     return roomsData.rooms.filter(
-  //       r => r.slug.toLowerCase() == removePluralSuffix(slug),
-  //     )
-  //   }
 
   return (
     <div className='flex w-full flex-col max-w-[23rem] mx-auto'>
@@ -63,9 +50,7 @@ export function CategorySelect({ lang }: { lang: Locale }) {
             aria-expanded={open}
             className='w-full justify-between'
           >
-            {/* {getRoomsLabel().find(category => category.slug === value)
-              ?.label ?? 'Select category...'} */}
-            Select category...
+            {selectedCategory?.label ?? 'Select category...'}
             <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
           </Button>
         </PopoverTrigger>
@@ -75,19 +60,19 @@ export function CategorySelect({ lang }: { lang: Locale }) {
             <CommandList>
               <CommandEmpty>No category found.</CommandEmpty>
               <CommandGroup>
-                {hqnrd.categories.map((slug, index) => (
+                {hqnrd.categories.map((category, index) => (
                   <CommandItem
                     key={index}
-                    value={slug.label}
-                    onSelect={() => handleSelectedCategory(slug)}
+                    value={category.label}
+                    onSelect={() => handleSelect(category)}
                   >
                     <Check
                       className={cn(
                         'mr-2 h-4 w-4',
-                        value === slug.label ? 'opacity-100' : 'opacity-0',
+                        value === category.slug ? 'opacity-100' : 'opacity-0',
                       )}
                     />
-                    {slug.label}
+                    {category.label}
                   </CommandItem>
                 ))}
               </CommandGroup>
