@@ -10,3 +10,4 @@ export { ExternalLink } from "./ExternalLink";
 export { ContactWidget } from "./ContactWidget";
 export { MenuItem } from "./Menu";
 export { Fqa } from "./Fqa";
+export { CategorySelect } from "./CategorySelect";

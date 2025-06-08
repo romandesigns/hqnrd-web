@@ -1,3 +1,5 @@
+import { categories } from "./categories";
+
 // Hotel details
 const details = {
   name: {
@@ -39,4 +41,5 @@ export const hqnrd = {
   ...details,
   ...contact,
   ...social,
+  categories: categories,
 };

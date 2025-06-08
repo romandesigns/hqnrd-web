@@ -16,10 +16,10 @@ export default function Footer({
   return (
     <footer className={clsx('px-2 py-6', className)}>
       <Content className='bg-secondary rounded-lg p-2 lg:p-10'>
-        <div className='flex justify-start items-center pb-6 mb-12'>
+        <div className='flex justify-start items-center pb-6 mb-12 px-3'>
           <Logo lang={lang} />
         </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3'>
           <Details />
           <div>
             <Social />

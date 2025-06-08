@@ -1,0 +1,412 @@
+{
+  "rooms": [
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd1570a4e65",
+      "unitNumber": 101,
+      "pricePerNight": 2735,
+      "category": "Basica",
+      "slug": "basica",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd1570a4j65",
+      "unitNumber": 102,
+      "pricePerNight": 2735,
+      "category": "Doble Cama",
+      "slug": "doble-cama",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd15ea48165",
+      "unitNumber": 201,
+      "pricePerNight": 2735,
+      "category": "Ejecutiva",
+      "slug": "ejecutiva",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd157h48165",
+      "unitNumber": 202,
+      "pricePerNight": 2735,
+      "category": "Basica",
+      "slug": "basica",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd1570a48x5",
+      "unitNumber": 203,
+      "pricePerNight": 2735,
+      "category": "Estandar",
+      "slug": "estandar",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd15da48165",
+      "unitNumber": 204,
+      "pricePerNight": 2735,
+      "category": "Estandar",
+      "slug": "estandar",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd157m48165",
+      "unitNumber": 301,
+      "pricePerNight": 2735,
+      "category": "Ejecutiva",
+      "slug": "ejecutiva",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42c-8ad1-dd1570a48165",
+      "unitNumber": 302,
+      "pricePerNight": 2735,
+      "category": "Familiar",
+      "slug": "familiar",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd157t48165",
+      "unitNumber": 401,
+      "pricePerNight": 2735,
+      "category": "Ejecutiva",
+      "slug": "ejecutiva",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd1570n8165",
+      "unitNumber": 402,
+      "pricePerNight": 2735,
+      "category": "Doble Cama",
+      "slug": "doble-cama",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45n119-b7f9-42b2-8ad1-dd1570a48165",
+      "unitNumber": 250,
+      "pricePerNight": 2735,
+      "category": "Doble",
+      "slug": "doble",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45ag19-b7f9-42b2-8ad1-dd1570a48165",
+      "unitNumber": 404,
+      "pricePerNight": 2735,
+      "category": "Doble",
+      "slug": "doble",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd1570a4265",
+      "unitNumber": 501,
+      "pricePerNight": 2735,
+      "category": "Standar",
+      "slug": "standar",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b99-42b2-8ad1-dd1570a48165",
+      "unitNumber": 502,
+      "pricePerNight": 2735,
+      "category": "Doble Cama",
+      "slug": "doble-cama",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45d119-b7f9-42b2-8ad1-dd1570a48165",
+      "unitNumber": 503,
+      "pricePerNight": 2735,
+      "category": "Basica",
+      "slug": "basica",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8ad1-dd1570k8165",
+      "unitNumber": 504,
+      "pricePerNight": 2735,
+      "category": "Doble",
+      "slug": "doble",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    },
+    {
+      "id": "d45a7119-b7f9-42b2-8f1-dd1570a48165",
+      "unitNumber": 505,
+      "pricePerNight": 2735,
+      "category": "Doble",
+      "slug": "doble",
+      "cardTitle": "Habitación Básica 101",
+      "cardDescription": "Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor.",
+      "pageTitle": "Detalles de la Habitación Básica 101",
+      "pageDescription": "Habitación Básica 101: Una opción ideal para quienes buscan comodidad y estilo en un ambiente acogedor. Equipada con todas las comodidades necesarias para una estancia placentera.",
+      "maxGuestAllowed": 2,
+      "bedQuantity": 1,
+      "roomDimension": "20m²",
+      "media": {
+        "featuredCardImage": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "roomGallery": [
+          "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/28347470/pexels-photo-28347470/free-photo-of-a-hotel-room-with-wooden-floors-and-a-large-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/19966760/pexels-photo-19966760/free-photo-of-gray-bedroom-with-a-double-bed-and-a-mirror-in-the-wardrobe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/27626182/pexels-photo-27626182/free-photo-of-a-bedroom-with-white-walls-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ]
+      }
+    }
+  ]
+}
