@@ -68,100 +68,96 @@ export default async function Page({ params }: PageProps) {
           <Container className='grid grid-cols-[1fr_.7fr] gap-10 max-md:grid-cols-1'>
             <Form action='#' className=''>
               <div className='mb-4 grid grid-cols-2 grid-rows-1 gap-4'>
-                <Label className='mb-2 flex-1' htmlFor='name'>
-                  <FormLabel label='Name' />
+                <Label
+                  className='mb-2 flex-1 flex flex-col items-start justify-center'
+                  htmlFor='name'
+                >
+                  <FormLabel className='mb-0!' label='Name' />
                   <Input type='text' id='name' />
                 </Label>
-                <Label className='mb-2 flex-1' htmlFor='lastName'>
-                  <FormLabel label='Last Name' />
+                <Label
+                  className='mb-2 flex-1 flex flex-col items-start justify-center'
+                  htmlFor='lastName'
+                >
+                  <FormLabel className='mb-0!' label='Last Name' />
                   <Input type='text' id='lastName' />
                 </Label>
               </div>
-              <Label className='mb-4 flex-1' htmlFor='email'>
-                <FormLabel label='Email' />
+              <Label
+                className='mb-2 flex-1 flex flex-col items-start justify-center'
+                htmlFor='email'
+              >
+                <FormLabel className='mb-0!' label='Email' />
                 <Input type='email' id='email' />
               </Label>
               <Label className='mt-4 inline-block flex-1' htmlFor='phone'>
-                <FormLabel label='Phone Number' />
+                <FormLabel className='mb-0!' label='Phone Number' />
                 <PhoneInput className='flex items-stretch' />
               </Label>
               <Label className='mt-4 block flex-1' htmlFor='message'>
-                <FormLabel label='Message' />
+                <FormLabel className='mb-0!' label='Message' />
                 <Textarea className='h-40' id='message' />
               </Label>
               <div>
                 <h3 className='py-8 font-bold'>Guests Services and Request</h3>
-                <ul className='flex w-full flex-wrap gap-4'>
-                  <li className='min-w-[10rem] flex-1'>
+                <ul className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
+                  <li className='min-w-[10rem] flex-1 my-1'>
                     <Label
                       htmlFor='transportation'
-                      className='flex items-center gap-2'
+                      className='gap-3 flex items-center'
                     >
                       <Checkbox id='transportation' />
-                      <FormLabel label='Transportation' />
+                      <FormLabel className='mb-0!' label='Transportation' />
                     </Label>
                   </li>
-                  <li className='min-w-[10rem] flex-1'>
+                  <li className='min-w-[10rem] flex-1 my-1'>
                     <Label
                       htmlFor='special-event'
-                      className='flex items-center gap-2'
+                      className='gap-3 flex items-center'
                     >
                       <Checkbox id='special-event' />
-                      <FormLabel label='Special Event' />
+                      <FormLabel className='mb-0!' label='Special Event' />
                     </Label>
                   </li>
-                  <li className='min-w-[10rem] flex-1'>
-                    <Label
-                      htmlFor='pet-friendly'
-                      className='flex items-center gap-2'
-                    >
-                      <Checkbox id='pet-friendly' />
-                      <FormLabel label='Pet Friendly Accomodations' />
-                    </Label>
-                  </li>
-                  <li className='min-w-[10rem] flex-1'>
-                    <Label
-                      htmlFor='reservations'
-                      className='flex items-center gap-2'
-                    >
+
+                  <li className='min-w-[10rem] flex-1 my-1'>
+                    <Label htmlFor='reservations' className='flex items-center'>
                       <Checkbox id='reservations' />
-                      <FormLabel label='Room Reservations' />
+                      <FormLabel className='mb-0!' label='Room Reservations' />
                     </Label>
                   </li>
-                  <li className='min-w-[10rem] flex-1'>
-                    <Label
-                      htmlFor='payments'
-                      className='flex items-center gap-2'
-                    >
+                  <li className='min-w-[10rem] flex-1 my-1'>
+                    <Label htmlFor='payments' className='flex items-center'>
                       <Checkbox id='payments' />
-                      <FormLabel label='Payments' />
+                      <FormLabel className='mb-0!' label='Payments' />
                     </Label>
                   </li>
-                  <li className='min-w-[10rem] flex-1'>
+
+                  <li className='min-w-[10rem] flex-1 my-1'>
                     <Label
                       htmlFor='discountProgram'
-                      className='flex items-center gap-2'
+                      className='gap-3 flex items-center'
                     >
                       <Checkbox id='discountProgram' />
-                      <FormLabel label='Discount Program' />
+                      <FormLabel className='mb-0!' label='Discount Program' />
                     </Label>
                   </li>
-                  <li className='min-w-[10rem] flex-1'>
-                    <Label
-                      htmlFor='parking'
-                      className='flex items-center gap-2'
-                    >
+                  <li className='min-w-[10rem] flex-1 my-1'>
+                    <Label htmlFor='parking' className='flex items-center'>
                       <Checkbox id='parking' />
-                      <FormLabel label='Parking' />
+                      <FormLabel className='mb-0!' label='Parking' />
                     </Label>
                   </li>
-                  <li className='min-w-[10rem] flex-1'>
-                    <Label
-                      htmlFor='account'
-                      className='flex items-center gap-2'
-                    >
+                  <li className='min-w-[10rem] flex-1 my-1'>
+                    <Label htmlFor='account' className='flex items-center'>
                       <Checkbox id='account' />
-                      <FormLabel label='Account' />
+                      <FormLabel className='mb-0!' label='Account' />
+                    </Label>
+                  </li>
+                  <li className='min-w-[10rem] flex-1 my-1'>
+                    <Label htmlFor='pet-friendly' className='flex items-center'>
+                      <Checkbox id='pet-friendly' />
+                      <FormLabel className='mb-0!' label='Pet Friendly' />
                     </Label>
                   </li>
                 </ul>

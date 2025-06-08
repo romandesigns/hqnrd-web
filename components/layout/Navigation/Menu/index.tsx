@@ -41,6 +41,13 @@ export function NavigationMenu({ lang }: { lang: Locale }) {
             </Button>
           </Link>
         </li>
+        <li className='hidden md:block'>
+          <Link href={`/${lang}/contactos`}>
+            <Button variant='link' className='text-xs font-bold'>
+              Contactos
+            </Button>
+          </Link>
+        </li>
         <li>
           <ModeToggle btnVariant='secondary' />
         </li>

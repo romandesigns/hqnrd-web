@@ -30,6 +30,7 @@ import * as React from 'react'
 import Image from 'next/image'
 import { countries } from './countries'
 import { useStateHistory } from './use-state-history'
+import clsx from 'clsx'
 
 export type Country = (typeof countries)[number]
 
@@ -155,7 +156,7 @@ export function PhoneInput({
   }
 
   return (
-    <div className={cn('flex gap-2', className)}>
+    <div className={clsx('flex gap-2', className)}>
       <Popover open={openCommand} onOpenChange={setOpenCommand} modal={true}>
         <PopoverTrigger asChild>
           <Button
@@ -205,17 +206,18 @@ export function PhoneInput({
                               ? 'opacity-100'
                               : 'opacity-0',
                           )}
+                        />
                         <Image
-                          src={`/assets/flags/${country.iso2.toLowerCase()}.svg`}
+                          loading='lazy'
+                          src={`/flags/${country.iso2.toLowerCase()}.svg`}
                           className='relative top-0.5 mr-2 h-3 w-4 object-cover'
                           title={country.name}
                           alt={country.name}
                           width={16}
                           height={12}
                         />
-                        />
-                        {country.name}
                         <span className='text-gray-11 ml-1'>
+                          {country.name}
                           (+{country.phone_code})
                         </span>
                       </CommandItem>
