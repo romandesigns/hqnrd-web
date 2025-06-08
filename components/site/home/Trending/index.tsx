@@ -4,15 +4,24 @@ import React from 'react'
 import { RoomCard } from '@/components/features/RoomCard'
 import Swiper from '@/components/features/Swiper'
 
-export function Trending() {
-  const items = [1, 2, 3, 4]
+export function Trending({
+  items,
+  title,
+  description,
+  showBorders,
+}: {
+  items?: number[]
+  title?: string
+  description?: string
+  showBorders?: boolean
+}) {
   return (
     <Container>
       <Content className='flex justify-center w-full !max-w-7xl'>
         <SectionHeading
-          showBorders
-          title='Our Scenic Spaces'
-          description='Click the images to learn more'
+          showBorders={showBorders}
+          title={title}
+          description={description}
         />
       </Content>
       <Content className=''>

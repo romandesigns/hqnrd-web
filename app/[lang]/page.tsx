@@ -1,4 +1,4 @@
-import { ClientWrapper, Main } from "@/components/layout";
+import { ClientWrapper, Main } from '@/components/layout'
 import {
   Discounts,
   Header,
@@ -6,30 +6,35 @@ import {
   Trending,
   ScenicSpaces,
   Reviews,
-} from "@/components/site/home";
-import { Categories } from "@/components/site/home/Categories";
-import { Locale } from "@/i18n-config";
+} from '@/components/site/home'
+import { Categories } from '@/components/site/home/Categories'
+import { Locale } from '@/i18n-config'
 
 interface LayoutProps {
   params: Promise<{
-    lang: Locale;
-  }>;
+    lang: Locale
+  }>
 }
 
 export default async function Home({ params }: LayoutProps) {
-  const { lang } = await params;
+  const { lang } = await params
 
   return (
     <ClientWrapper showNavigation lang={lang} showFooter>
       <Header lang={lang} />
-      <Main className="py-20">
+      <Main className='py-20'>
         <RoomsFilter lang={lang} />
         <Reviews />
         <Discounts lang={lang} />
         <Categories lang={lang} />
-        {/* <ScenicSpaces /> */}
-        <Trending />
+        <ScenicSpaces />
+        <Trending
+          items={[1, 2, 3, 4]}
+          title='Our Trending Rooms'
+          description='Check out the most popular rooms'
+          showBorders
+        />
       </Main>
     </ClientWrapper>
-  );
+  )
 }

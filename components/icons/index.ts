@@ -19,6 +19,8 @@ export {
   FaBed,
   FaUsers,
   FaRegStar,
+  FaAirbnb,
+  FaHotel 
 } from "react-icons/fa";
 export {
   FaList,

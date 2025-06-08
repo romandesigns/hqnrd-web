@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import { ReactNode } from "react";
-import Footer from "../Footer";
-import Navigation from "../Navigation";
+import { ReactNode } from 'react'
+import Footer from '../Footer'
+import Navigation from '../Navigation'
 
 export default function ClientWrapper({
   children,
@@ -12,12 +12,12 @@ export default function ClientWrapper({
   footerClassName,
   lang,
 }: {
-  children: ReactNode;
-  showNavigation?: boolean;
-  showFooter?: boolean;
-  navigationClassName?: string;
-  footerClassName?: string;
-  lang: string;
+  children: ReactNode
+  showNavigation?: boolean
+  showFooter?: boolean
+  navigationClassName?: string
+  footerClassName?: string
+  lang: string
 }) {
   return (
     <>
@@ -25,7 +25,7 @@ export default function ClientWrapper({
         <Navigation className={navigationClassName} lang={lang} />
       )}
       {children}
-      {showFooter && <Footer className={footerClassName} />}
+      {showFooter && <Footer className={footerClassName} lang={lang} />}
     </>
-  );
+  )
 }
