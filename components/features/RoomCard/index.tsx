@@ -12,20 +12,26 @@ import {
   TbToolsKitchen,
 } from '@/components/icons'
 import clsx from 'clsx'
+import { Locale } from '@/i18n-config'
+import Link from 'next/link'
+import { addPluralSuffix } from '@/lib/utils'
 
 export function RoomCard({
-  flexBasis,
-  items,
+  className,
+  unitNumber,
+  slug,
+  lang,
 }: {
-  flexBasis: string
-  items: number[]
+  className?: string
+  unitNumber: number
+  slug: string
+  lang: Locale
 }) {
-  return items?.map(item => (
+  return (
     <article
-      key={item}
       className={clsx(
-        `relative bg-[var(--card)] flex flex-col gap-4 rounded-lg shadow-md ring-1 ring-[var(--card)] ring-offset-4 ring-offset-background mr-6 `,
-        flexBasis,
+        `relative bg-[var(--card)] flex flex-col gap-4 rounded-lg shadow-md ring-1 ring-[var(--card)] ring-offset-4 ring-offset-background mr-6 pb-3 `,
+        className,
       )}
     >
       <div className='relative'>
@@ -97,10 +103,14 @@ export function RoomCard({
         </div>
       </div>
       <div className='p-2 pt-0 px-4'>
-        <Button size='full' className='uppercase text-xs font-bold'>
-          Ver Detalles
-        </Button>
+        <Link
+          href={`/${lang}/habitaciones/${addPluralSuffix(slug)}/${unitNumber}`}
+        >
+          <Button size='full' className='uppercase text-xs font-bold'>
+            Ver Detalles
+          </Button>
+        </Link>
       </div>
     </article>
-  ))
+  )
 }

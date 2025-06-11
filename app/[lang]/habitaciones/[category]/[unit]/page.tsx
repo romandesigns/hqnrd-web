@@ -14,7 +14,6 @@ export default async function Page({ params }: LayoutProps) {
 
   return (
     <>
-      <Header lang={lang} defaultCategory={category} />
       <Main>Category Found: {category}</Main>
     </>
   )

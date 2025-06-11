@@ -9,6 +9,7 @@ import {
 } from '@/components/site/home'
 import { Categories } from '@/components/site/home/Categories'
 import { Locale } from '@/i18n-config'
+import mocked_data from '@/public/data/rooms.json'
 
 interface LayoutProps {
   params: Promise<{
@@ -18,7 +19,8 @@ interface LayoutProps {
 
 export default async function Home({ params }: LayoutProps) {
   const { lang } = await params
-
+  const trendingRooms = mocked_data.rooms.slice(0, 4)
+  console.log(trendingRooms)
   return (
     <ClientWrapper showNavigation lang={lang} showFooter>
       <Header lang={lang} />
@@ -29,10 +31,11 @@ export default async function Home({ params }: LayoutProps) {
         <Categories lang={lang} />
         <ScenicSpaces />
         <Trending
-          items={[1, 2, 3, 4]}
+          items={trendingRooms}
           title='Our Trending Rooms'
           description='Check out the most popular rooms'
           showBorders
+          lang={lang}
         />
       </Main>
     </ClientWrapper>

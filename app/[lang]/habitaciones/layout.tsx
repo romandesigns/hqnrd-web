@@ -9,9 +9,8 @@ interface LayoutProps {
   }
 }
 
-// ✅ This works perfectly
-export default function RoomsLayout({ params, children }: LayoutProps) {
-  const { lang } = params
+export default async function RoomsLayout({ params, children }: LayoutProps) {
+  const { lang } = await params
 
   return (
     <ClientWrapper showNavigation showFooter lang={lang}>

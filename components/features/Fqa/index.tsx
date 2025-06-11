@@ -9,7 +9,7 @@ import { SectionHeading } from '../Heading'
 
 export function Fqa() {
   return (
-    <Container className='bg-background/20 px-4 lg:p-20 rounded-lg'>
+    <Container className='bg-background/20 px-8  lg:py-8 rounded-lg'>
       <SectionHeading
         showBorders
         title='Frequently Questions'
