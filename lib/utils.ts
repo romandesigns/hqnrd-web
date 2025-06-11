@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const removePluralSuffix = (word:string) => word.replace(/(?<!l)es$|s$/, "");
+export const removePluralSuffix = (word:string) => word.replace(/-/g, '  ').replace(/(?<!l)es$|s$/, "");
 
 export const addPluralSuffix = (word: string) => {
   if (word.endsWith('z')) {

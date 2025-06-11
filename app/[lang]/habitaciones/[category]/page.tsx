@@ -4,7 +4,7 @@ import { Locale } from '@/i18n-config'
 import { RoomCard } from '@/components/features/RoomCard'
 import mocked_data from '@/public/data/rooms.json'
 import { removePluralSuffix } from '@/lib/utils'
-
+import { redirect } from 'next/navigation'
 interface LayoutProps {
   params: Promise<{
     lang: Locale
@@ -17,6 +17,10 @@ export default async function Page({ params }: LayoutProps) {
   const filteredRooms = mocked_data.rooms.filter(
     room => room.slug === removePluralSuffix(category),
   )
+
+  if (filteredRooms.length === 0) {
+    redirect(`/${lang}/habitaciones`)
+  }
 
   return (
     <>

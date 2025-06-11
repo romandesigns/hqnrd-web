@@ -160,3 +160,17 @@
     @apply relative before:content-[""] before:absolute before:-bottom-1 before:left-2 before:right-2 before:w-full before:h-full before:bg-[var(--error)] before:-z-[2] before:-top-0;
   }
 }
+
+@layer utilities {
+  @keyframes square {
+    0%, 10.5% { top: 0; left: 0; }
+    12.5%, 23% { top: 0; left: 32px; }
+    25%, 35.5% { top: 0; left: 64px; }
+    37.5%, 48% { top: 32px; left: 64px; }
+    50%, 60.5% { top: 32px; left: 32px; }
+    62.5%, 73% { top: 32px; left: 0; }
+    75%, 85.5% { top: 0; left: 0; }
+    87.5%, 98% { top: 0; left: 32px; }
+    100% { top: 0; left: 0; }
+  }
+}
