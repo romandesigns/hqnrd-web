@@ -156,4 +156,7 @@
   .icon-highlight {
     @apply border p-1 rounded-sm bg-primary/20;
   }
+  .text-highlight {
+    @apply relative before:content-[""] before:absolute before:-bottom-1 before:left-2 before:right-2 before:w-full before:h-full before:bg-[var(--error)] before:-z-[2] before:-top-0;
+  }
 }

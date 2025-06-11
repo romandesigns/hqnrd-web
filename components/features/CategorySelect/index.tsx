@@ -4,6 +4,8 @@ import * as React from 'react'
 import { Check, ChevronsUpDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
+import { hqnrd } from '@/constants'
+import { useRouter } from 'next/navigation'
 import {
   Command,
   CommandEmpty,
@@ -18,68 +20,72 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 import { Locale } from '@/i18n-config'
-import { hqnrd } from '@/constants'
-import { useRouter } from 'next/navigation'
 
-type CategorySelectProps = {
+export function CategorySelect({
+  lang,
+  defaultCategory = 'Select category...',
+}: {
   lang: Locale
-  category: string | null // selected slug
-}
-
-export function CategorySelect({ lang, value, category }: CategorySelectProps) {
+  defaultCategory?: string
+}) {
   const [open, setOpen] = React.useState(false)
-  const selectedCategory = hqnrd.categories.find(
-    cat => cat.label.toLowerCase() === category?.toLowerCase(),
-  )
+  const [value, setValue] = React.useState(defaultCategory)
   const router = useRouter()
 
   const handleSelect = (category: { label: string; slug: string }) => {
     setOpen(false)
-    console.log(category)
-    router.push(`/${lang}/habitaciones/${category.slug}`)
+    if (category.label === 'Ver Todas') {
+      router.push(`/${lang}/habitaciones`)
+    } else if (category.slug) {
+      router.push(`/${lang}/habitaciones/${category.slug}`)
+    }
   }
 
   return (
-    <div className='flex w-full flex-col max-w-[23rem] mx-auto'>
-      <Popover open={open} onOpenChange={setOpen}>
-        <PopoverTrigger asChild>
-          <Button
-            size='lg'
-            variant='secondary'
-            role='combobox'
-            aria-expanded={open}
-            className='w-full justify-between'
-          >
-            {selectedCategory?.label ?? 'Select category...'}
-            <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
-          </Button>
-        </PopoverTrigger>
-        <PopoverContent className='w-[370px] p-0'>
-          <Command>
-            <CommandInput placeholder='Search category...' />
-            <CommandList>
-              <CommandEmpty>No category found.</CommandEmpty>
-              <CommandGroup>
-                {hqnrd.categories.map((category, index) => (
-                  <CommandItem
-                    key={index}
-                    value={category.label}
-                    onSelect={() => handleSelect(category)}
-                  >
-                    <Check
-                      className={cn(
-                        'mr-2 h-4 w-4',
-                        value === category.slug ? 'opacity-100' : 'opacity-0',
-                      )}
-                    />
-                    {category.label}
-                  </CommandItem>
-                ))}
-              </CommandGroup>
-            </CommandList>
-          </Command>
-        </PopoverContent>
-      </Popover>
-    </div>
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <Button
+          variant='secondary'
+          role='combobox'
+          aria-expanded={open}
+          className='w-full max-w-[18rem] justify-between'
+        >
+          {hqnrd.categories.find(category => category.slug === value)?.label ||
+            defaultCategory}
+          <ChevronsUpDown className='opacity-50' />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className='p-0'>
+        <Command>
+          <CommandInput placeholder={value} className='h-9' />
+          <CommandList>
+            <CommandEmpty>No category found.</CommandEmpty>
+            <CommandGroup>
+              {hqnrd.categories.map(category => (
+                <CommandItem
+                  key={category.slug}
+                  value={category.slug}
+                  onSelect={currentValue => {
+                    setValue(currentValue)
+                    handleSelect({
+                      label: category.label,
+                      slug: category.slug,
+                    })
+                  }}
+                >
+                  {category.label}
+                  <Check
+                    className={cn(
+                      'ml-auto',
+                      value === category.slug ? 'opacity-100' : 'opacity-0',
+                    )}
+                  />
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          </CommandList>
+        </Command>
+      </PopoverContent>
+    </Popover>
   )
 }
