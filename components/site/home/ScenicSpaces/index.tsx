@@ -1,5 +1,6 @@
 import { SectionHeading } from '@/components/features/Heading'
 import { Container, Content } from '@/components/layout'
+import { images } from '@/helpers/localImages'
 import Image from 'next/image'
 
 /**
@@ -38,7 +39,7 @@ export function ScenicSpaces() {
             </div>
           </div>
           <Image
-            src='/images/rooms/img-1.webp'
+            src={images[0]}
             alt='Rooms Interior'
             fill
             className='object-cover'
@@ -58,7 +59,7 @@ export function ScenicSpaces() {
             </div>
           </div>
           <Image
-            src='/images/rooms/img-1.webp'
+            src={images[3]}
             alt='Rooftop Interior'
             fill
             className='object-cover'
@@ -78,7 +79,7 @@ export function ScenicSpaces() {
             </div>
           </div>
           <Image
-            src='/images/rooms/img-1.webp'
+            src={images[2]}
             alt='Hallways Interior'
             fill
             className='object-cover'
@@ -98,7 +99,7 @@ export function ScenicSpaces() {
             </div>
           </div>
           <Image
-            src='/images/rooms/img-1.webp'
+            src={images[1]}
             alt='Building Exterior'
             fill
             className='object-cover'

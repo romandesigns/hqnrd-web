@@ -20,7 +20,6 @@ interface LayoutProps {
 export default async function Home({ params }: LayoutProps) {
   const { lang } = await params
   const trendingRooms = mocked_data.rooms.slice(0, 4)
-  console.log(trendingRooms)
   return (
     <ClientWrapper showNavigation lang={lang} showFooter>
       <Header lang={lang} />

@@ -1,11 +1,15 @@
 import { ContactWidget } from '@/components/features'
+import { FaShareNodes } from '@/components/icons'
 import { Container, Content, Main } from '@/components/layout'
+import { Trending } from '@/components/site/home'
+import { Amenities, Description, Features, Media } from '@/components/site/Room'
 import { ReservationDialogForm } from '@/components/site/Room/ReservationDialogForm'
 import { Header } from '@/components/site/rooms/Header'
 import { GoBack } from '@/components/ui/backBtn'
 import { Button } from '@/components/ui/button'
 import { Locale } from '@/i18n-config'
 import { removePluralSuffix } from '@/lib/utils'
+import mocked_data from '@/public/data/rooms.json'
 
 interface LayoutProps {
   params: Promise<{
@@ -18,6 +22,7 @@ interface LayoutProps {
 export default async function Page({ params }: LayoutProps) {
   const { lang, category, unit } = await params
   console.log(lang, category, unit)
+  const trendingRooms = mocked_data.rooms.slice(0, 4)
 
   return (
     <>
@@ -72,15 +77,15 @@ export default async function Page({ params }: LayoutProps) {
           <aside className='hidden pt-4 md:block'>
             <div className='top-52 py-8 md:sticky'>
               <h4 className='inline-block translate-x-4 translate-y-4 rounded-md border-4 border-background bg-secondary p-2 px-6 pl-4 text-2xl font-bold'>
-                {convertToLocaleString(room.pricePerNight, lang)} / Night
+                {/* {convertToLocaleString(room.pricePerNight, lang)} / Night */}
               </h4>
               <div className='rounded-md bg-secondary/50 px-2 py-6'>
-                <Booking
+                {/* <Booking
                   lang={lang}
                   unitNumber={Number(roomUnitNumber)}
                   unitCategory={roomCategory}
                   pricePerNight={room.pricePerNight}
-                />
+                /> */}
               </div>
             </div>
           </aside>
@@ -88,10 +93,10 @@ export default async function Page({ params }: LayoutProps) {
       </Container>
       <Container className='py-5 lg:py-20'>
         <Trending
-          rooms={data.rooms}
+          items={trendingRooms}
           lang={lang}
-          heading='Trending now'
-          description='See these otehr options and reserve today'
+          title='Trending now'
+          description='See these other options and reserve today'
         />
       </Container>
       <Main>Category Found: {category}</Main>

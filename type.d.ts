@@ -7,4 +7,5 @@ export interface CategoryInterface {
   maxGuestsPerUnit: number;
   totalUnits: number;
   bgImage: string;
+  details: { units: number; maxPerUnit: number }[];
 }

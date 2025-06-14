@@ -6,6 +6,7 @@ import {
   FaUsers,
   MdBed,
 } from "@/components/icons";
+import { images } from "@/helpers/localImages";
 import { CategoryInterface } from "@/type";
 
 export const categories: CategoryInterface[] = [
@@ -15,9 +16,10 @@ export const categories: CategoryInterface[] = [
     Icon: MdBed,
     maxGuestsPerUnit: 4,
     totalUnits: 2,
-    bgImage: "/assets/images/home/header/HQNRD-first-featured-image.webp",
+    bgImage: images[0],
     btnCTA: "View Rooms",
     slug: "basicas",
+    details: [{ units: 2, maxPerUnit: 4 }] 
   },
   {
     label: "Doble Camas",
@@ -25,9 +27,10 @@ export const categories: CategoryInterface[] = [
     Icon: FaBed,
     maxGuestsPerUnit: 4,
     totalUnits: 2,
-    bgImage: "/assets/images/home/header/HQNRD-first-featured-image.webp",
+    bgImage: images[1],
     btnCTA: "View Rooms",
     slug: "doble-camas",
+    details: [{ units: 3, maxPerUnit: 4 }]
   },
   {
     label: "Executivas",
@@ -35,9 +38,10 @@ export const categories: CategoryInterface[] = [
     Icon: FaCrown,
     maxGuestsPerUnit: 4,
     totalUnits: 2,
-    bgImage: "/assets/images/home/header/HQNRD-first-featured-image.webp",
+    bgImage: images[2],
     btnCTA: "View Rooms",
     slug: "ejecutivas",
+    details: [{ units: 2, maxPerUnit: 4 }]
   },
   {
     label: "Standars",
@@ -45,9 +49,10 @@ export const categories: CategoryInterface[] = [
     Icon: BsFillHouseDoorFill,
     maxGuestsPerUnit: 4,
     totalUnits: 2,
-    bgImage: "/assets/images/home/header/HQNRD-first-featured-image.webp",
+    bgImage: images[3],
     btnCTA: "View Rooms",
     slug: "standars",
+    details: [{ units: 2, maxPerUnit: 4 }]
   },
   {
     label: "Dobles",
@@ -55,9 +60,10 @@ export const categories: CategoryInterface[] = [
     Icon: FaClone,
     maxGuestsPerUnit: 4,
     totalUnits: 2,
-    bgImage: "/assets/images/home/header/HQNRD-first-featured-image.webp",
+    bgImage: images[0],
     btnCTA: "View Rooms",
     slug: "dobles",
+    details: [{ units: 2, maxPerUnit: 4 }]
   },
   {
     label: "Familiares",
@@ -65,9 +71,10 @@ export const categories: CategoryInterface[] = [
     units: [302],
     maxGuestsPerUnit: 4,
     totalUnits: 2,
-    bgImage: "/assets/images/home/header/HQNRD-first-featured-image.webp",
+    bgImage: images[0],
     btnCTA: "View Rooms",
     slug: "familiares",
+    details: [{ units: 2, maxPerUnit: 4 }]
   },
   {
     label: "Ver Todas",
@@ -78,5 +85,6 @@ export const categories: CategoryInterface[] = [
     bgImage: "",
     btnCTA: "",
     slug: "",
+    details: []
   },
 ];
