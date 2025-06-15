@@ -4,6 +4,7 @@ import { GoogleStats } from '@/components/features/GoogleStats'
 import { FaLocationDot } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { Locale } from '@/i18n-config'
+import { Highlight } from '@/components/ui/highlight'
 
 export function CopyWritting({ lang }: { lang: Locale }) {
   return (
@@ -16,14 +17,20 @@ export function CopyWritting({ lang }: { lang: Locale }) {
           <FaLocationDot
             size={13}
             className='animate-bounce text-[var(--error)]'
-          />{' '}
+          />
           In Salcedo, Republica Dominicana
         </p>
         <h2 className='font-black text-2xl text-center lg:text-left lg:text-4xl my-4'>
           UNMACHED{' '}
-          <span className='relative before:content-[""] before:absolute before:-bottom-1 before:left-2 before:right-2 before:w-full before:h-full before:bg-[var(--error)] before:-z-[2] before:-top-0'>
-            COMFORT AND ELEGANCE
-          </span>{' '}
+          <Highlight
+            type='underline'
+            color='indigo'
+            intensity='strong'
+            animated={true}
+            underlineStyle='wavy'
+          >
+            COMFORT AND ELEGANCE{' '}
+          </Highlight>{' '}
           AWAIT!
         </h2>
         <p className='text-xs lg:text-sm max-w-2xl text-center lg:text-left w-full text-muted-foreground max-lg:max-w-md max-lg:mx-auto xl:max'>

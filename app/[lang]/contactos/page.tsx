@@ -185,6 +185,12 @@ export default async function Page({ params }: PageProps) {
                   Chat to us in person at our reception
                 </p>
               </div>
+              <div className='p-6'>
+                <h3 className='font-bold'>Assistance 24/7</h3>
+                <p className='text-xs text-muted-foreground'>
+                  Chat with our virtual assistant for quick help
+                </p>
+              </div>
             </aside>
           </Container>
         </Content>

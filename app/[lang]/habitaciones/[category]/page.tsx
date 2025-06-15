@@ -3,7 +3,7 @@ import { Header } from '@/components/site/rooms/Header'
 import { Locale } from '@/i18n-config'
 import { RoomCard } from '@/components/features/RoomCard'
 import mocked_data from '@/public/data/rooms.json'
-import { removePluralSuffix } from '@/lib/utils'
+import { stFormatter } from '@/lib/utils'
 import { redirect } from 'next/navigation'
 interface LayoutProps {
   params: Promise<{
@@ -15,7 +15,7 @@ interface LayoutProps {
 export default async function Page({ params }: LayoutProps) {
   const { lang, category } = await params
   const filteredRooms = mocked_data.rooms.filter(
-    room => room.slug === removePluralSuffix(category),
+    room => room.slug === stFormatter.removePluralSuffix(category),
   )
 
   if (filteredRooms.length === 0) {

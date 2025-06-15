@@ -14,5 +14,10 @@ export const images = [
   "/images/rooms/img-13.jpg",
   "/images/rooms/img-14.jpg",
   "/images/rooms/img-15.jpg",
+  "/images/rooms/img-16.jpg",
+  "/images/rooms/img-17.jpg",
+  "/images/rooms/img-18.jpg",
+  "/images/rooms/img-19.jpg",
+  "/images/rooms/img-20.jpg",
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/5/hPwAFhgK/AkeLhQAAAABJRU5ErkJggg=="
 ];

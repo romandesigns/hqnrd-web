@@ -6,8 +6,9 @@ import { Amenities, Description, Features, Media } from '@/components/site/Room'
 import { GoBack } from '@/components/ui/backBtn'
 import { Button } from '@/components/ui/button'
 import { Locale } from '@/i18n-config'
-import { removePluralSuffix } from '@/lib/utils'
+import { stFormatter } from '@/lib/utils'
 import mocked_data from '@/public/data/rooms.json'
+import { redirect } from 'next/navigation'
 
 interface LayoutProps {
   params: Promise<{
@@ -17,23 +18,38 @@ interface LayoutProps {
   }>
 }
 
+const filteredRoom = async (category: string, unit: string, lang: Locale) => {
+  const zanitizedCategory = stFormatter.removePluralSuffix(category)
+  const room = mocked_data.rooms.find(
+    room => room.slug === zanitizedCategory && room.unitNumber === Number(unit),
+  )
+  if (!room) {
+    redirect(`/${lang}/habitaciones`)
+  }
+  return room
+}
+
 export default async function Page({ params }: LayoutProps) {
   const { lang, category, unit } = await params
-  console.log(lang, category, unit)
+  const room = await filteredRoom(category, unit, lang)
   const trendingRooms = mocked_data.rooms.slice(0, 4)
+  const { unitNumber } = room
+  console.log(room)
 
   return (
     <>
-      <header className='hqnrd-frosty-bg'>
+      <header className='hqnrd-frosty-bg sticky top-2 lg:-top-8 bg-background/90 pb-6 backdrop-blur-md z-[2]'>
         <Content className='p-2!'>
           <div className='lg:py-3'>
             <GoBack variant='outline' />
           </div>
           <div className='flex flex-col items-center justify-center md:flex-row md:justify-between'>
-            <div className='mb-4 flex flex-col items-center justify-center gap-4 lg:mt-8 md:flex-1 md:items-start md:justify-start lg:mb-0'>
-              <p className='font-bold'>UNIT {unit}</p>
+            <div className='mb-4 flex flex-col items-center justify-center gap-2 lg:mt-8 md:flex-1 md:items-start md:justify-start lg:mb-0'>
+              <p className='font-bold text-sm text-muted-foreground md:text-lg'>
+                Unit {unitNumber}
+              </p>
               <h2 className='text-3xl font-black uppercase leading-6 md:text-5xl md:font-black'>
-                {removePluralSuffix(category)}
+                {stFormatter.removePluralSuffix(category)}
               </h2>
             </div>
             <div className='md:max-w-auto flex w-full max-w-6xl items-center justify-center md:w-auto md:flex-col md:justify-between'>

@@ -5,7 +5,11 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const removePluralSuffix = (word:string) => word.replace(/-/g, '  ').replace(/(?<!l)es$|s$/, "");
+export const stFormatter = {
+  stripHyphen: (word: string) => word.replace(/-/g, ' '),
+  addHyphen: (word: string) => word.replace(/ /g, '-'),
+  removePluralSuffix: (word: string) => word.replace(/(?<!l)es$|s$/, ""),
+}
 
 export const addPluralSuffix = (word: string) => {
   if (word.endsWith('z')) {
