@@ -1,19 +1,17 @@
 'use server';
 
-import { redirect } from 'next/navigation';
 import { BookingSchema, BookingSchemaType } from '../validation/validateAddReservation';
-import { parseFormData, serializeErrorsAndDefaults } from '@/helpers/formParser';
+import { parseFormData } from '@/helpers/formParser';
 
-const addReservatation = async (formData: FormData) => {
-  const lang = formData.get('lang')?.toString() || 'en';
-  const slug = formData.get('slug')?.toString() || '';
-  const unitNumber = formData.get('unitNumber')?.toString() || '';
+type ActionResult =
+  | { success: true; data: BookingSchemaType }
+  | { success: false; errors: Record<string, string> };
 
-  const { success, data, errors, validData } = parseFormData(BookingSchema, formData);
+const addReservatation = async (formData: FormData): Promise<ActionResult> => {
+  const { success, data, errors } = parseFormData(BookingSchema, formData);
 
   if (!success) {
-    const queryString = serializeErrorsAndDefaults(errors ?? {}, validData ?? {});
-    redirect(`/${lang}/habitaciones/${slug}/${unitNumber}?${queryString}`);
+    return { success: false, errors: errors ?? {} };
   }
 
   const parsedData: BookingSchemaType = data;
@@ -21,7 +19,7 @@ const addReservatation = async (formData: FormData) => {
 
   // Save logic here
 
-  redirect(`/${lang}/habitaciones/${slug}/${parsedData.unitNumber}?success=true`);
+  return { success: true, data: parsedData };
 };
 
 export { addReservatation };

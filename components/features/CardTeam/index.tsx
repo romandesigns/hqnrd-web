@@ -1,13 +1,6 @@
-import clsx from 'clsx'
-
-export function TeamCard({ className }: { className?: string }) {
+export default function TeamCard() {
   return (
-    <li
-      className={clsx(
-        `rounded-md bg-secondary flex items-center justify-center flex-col`,
-        className,
-      )}
-    >
+    <li className='rounded-md bg-secondary flex-1 min-w-[9rem] flex items-center justify-center flex-col'>
       <div className='p-1 w-full h-full'>
         <div className='bg-green-200 aspect-square rounded-md w-full h-full block' />
       </div>

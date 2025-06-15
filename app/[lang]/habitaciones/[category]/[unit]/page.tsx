@@ -42,6 +42,7 @@ export default async function Page(props: {
     const date = new Date(value)
     return isNaN(date.getTime()) ? undefined : date.toISOString()
   }
+
   const formReturnedDefaults = {
     adults: Number(searchParams['default_adults'] ?? 0),
     children: Number(searchParams['default_children'] ?? 0),

@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { DateAndTimePicker } from '@/components/ui/DateTimePicker'
 import { InputNumber } from '@/components/ui/InputNumber'
@@ -5,8 +7,10 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Locale } from '@/i18n-config'
 import { addReservatation } from '@/utils/actions/actionAddReservation'
+import { BookingSchemaType } from '@/utils/validation/validateAddReservation'
 import Form from 'next/form'
 import React from 'react'
+import { useActionState } from 'react'
 
 interface BookingProps {
   lang: Locale
@@ -31,9 +35,20 @@ export default function Booking({
   slug,
   formReturnedDefaults,
 }: BookingProps) {
+  const initialState = {
+    message: '',
+  }
+
+  const [state, formAction] = useActionState<typeof addReservation>(
+    addReservation,
+    initialState,
+  )
+
+  console.log(state)
+
   return (
     <Form
-      action={addReservatation}
+      action={formAction}
       className='p-6 pb-4 flex flex-col gap-6 [@width<300px]:py-2 [@width>230px]:py-4'
     >
       <div className='flex gap-6'>
@@ -136,9 +151,7 @@ export default function Booking({
           aria-readonly='true'
         />
 
-        <Button size='full' className='mt-8 py-5' type='submit'>
-          Add Booking
-        </Button>
+        <Button type='submit'>Create Post</Button>
       </div>
     </Form>
   )
