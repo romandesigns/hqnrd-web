@@ -25,8 +25,8 @@ export default async function Page({ params }: LayoutProps) {
   return (
     <>
       <header className='hqnrd-frosty-bg'>
-        <Content className='p-2'>
-          <div className='py-3'>
+        <Content className='p-2!'>
+          <div className='lg:py-3'>
             <GoBack variant='outline' />
           </div>
           <div className='flex flex-col items-center justify-center md:flex-row md:justify-between'>
@@ -53,10 +53,10 @@ export default async function Page({ params }: LayoutProps) {
         <Container>
           <Content className='py-0!'>
             <div className='grid grid-cols-4 grid-rows-2 gap-1 p-2'>
-              <figure className='col-span-2 row-span-2 aspect-square rounded-lg bg-pink-500'></figure>
-              <figure className='col-start-3 col-end-5 rounded-lg bg-purple-500'></figure>
-              <figure className='col-start-3 col-end-4 row-start-2 row-end-3 rounded-lg bg-orange-500'></figure>
-              <figure className='col-start-4 col-end-5 rounded-lg bg-yellow-500'></figure>
+              <figure className='col-span-2 row-span-2 aspect-square rounded-sm bg-pink-500'></figure>
+              <figure className='col-start-3 col-end-5 rounded-sm bg-purple-500'></figure>
+              <figure className='col-start-3 col-end-4 row-start-2 row-end-3 rounded-sm bg-orange-500'></figure>
+              <figure className='col-start-4 col-end-5 rounded-sm bg-yellow-500'></figure>
             </div>
           </Content>
         </Container>
@@ -73,31 +73,31 @@ export default async function Page({ params }: LayoutProps) {
               <Amenities />
               <Media />
             </article>
-            <aside className='hidden pt-4 md:block'>
+            {/* <aside className='hidden pt-4 md:block'>
               <div className='top-52 py-8 md:sticky'>
                 <h4 className='inline-block translate-x-4 translate-y-4 rounded-md border-4 border-background bg-secondary p-2 px-6 pl-4 text-2xl font-bold'>
-                  {/* {convertToLocaleString(room.pricePerNight, lang)} / Night */}
+                  {convertToLocaleString(room.pricePerNight, lang)} / Night
                 </h4>
                 <div className='rounded-md bg-secondary/50 px-2 py-6'>
-                  {/* <Booking
+                  <Booking
                   lang={lang}
                   unitNumber={Number(roomUnitNumber)}
                   unitCategory={roomCategory}
                   pricePerNight={room.pricePerNight}
-                /> */}
+                />
                 </div>
               </div>
-            </aside>
+            </aside> */}
           </Content>
         </Container>
-        <Container className='py-5 lg:py-20'>
+        {/* <Container className='py-5 lg:py-20'>
           <Trending
             items={trendingRooms}
             lang={lang}
             title='Trending now'
             description='See these other options and reserve today'
           />
-        </Container>
+        </Container> */}
       </Main>
     </>
   )

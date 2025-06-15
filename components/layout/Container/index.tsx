@@ -1,12 +1,14 @@
-import { clsx } from "clsx";
-import React, { ReactNode } from "react";
+import { clsx } from 'clsx'
+import React, { ReactNode } from 'react'
 
 export default function Container({
   className,
   children,
 }: {
-  className?: string;
-  children: ReactNode;
+  className?: string
+  children: ReactNode
 }) {
-  return <section className={clsx("py-10", className)}>{children}</section>;
+  return (
+    <section className={clsx('py-2 lg:py-10', className)}>{children}</section>
+  )
 }

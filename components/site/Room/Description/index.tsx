@@ -4,7 +4,7 @@ export function Description() {
   return (
     <div className='w-full'>
       <h3 className='font-bold text-xl mb-2'>Description</h3>
-      <div className='my-3 [&>p]:mb-4 [&>p]:text-sm [&>p]:leading-relaxed'>
+      <div className='my-3 [&>p]:mb-4 [&>p]:text-xs md:[&>p]:text-[.98rem] [&>p]:leading-relaxed'>
         <p>
           The Basic Room is a cozy space for relaxation and tranquility. The
           room is equipped with a comfortable bed, a private bathroom, and a

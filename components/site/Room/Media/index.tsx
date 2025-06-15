@@ -14,11 +14,27 @@ export function Media() {
         <div className='flex w-full flex-col'>
           <h3 className='mb-2 text-xl font-bold'>Walkthrough</h3>
           <div className='relative aspect-[16/9] w-full flex-grow overflow-hidden rounded-md lg:aspect-auto'>
-            <HeroVideoDialog
+            <div className='relative'>
+              <HeroVideoDialog
+                className='block dark:hidden'
+                animationStyle='from-center'
+                videoSrc='https://cdn.pixabay.com/video/2025/01/19/253436_large.mp4'
+                thumbnailSrc='/video/poster.gif'
+                thumbnailAlt='Hero Video'
+              />
+              <HeroVideoDialog
+                className='hidden dark:block'
+                animationStyle='from-center'
+                videoSrc='https://cdn.pixabay.com/video/2025/01/19/253436_large.mp4'
+                thumbnailSrc='/video/poster.gif'
+                thumbnailAlt='Hero Video'
+              />
+            </div>
+            {/* <HeroVideoDialog
               videoSrc='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-              thumbnailSrc='https://via.placeholder.com/1920x1080'
+              thumbnailSrc='/video/poster.gif'
               thumbnailAlt='Video thumbnail'
-            />
+            /> */}
           </div>
         </div>
       </div>
