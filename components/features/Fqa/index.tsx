@@ -10,11 +10,7 @@ import { SectionHeading } from '../Heading'
 export function Fqa() {
   return (
     <Container className='bg-background/20 px-8  lg:py-8 rounded-lg'>
-      <SectionHeading
-        showBorders
-        title='Frequently Questions'
-        description='Answers to common questions.'
-      />
+      <SectionHeading title='Frequently Questions' />
       <Content>
         <Accordion
           type='single'

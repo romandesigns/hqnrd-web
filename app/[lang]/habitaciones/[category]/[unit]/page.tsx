@@ -73,31 +73,31 @@ export default async function Page({ params }: LayoutProps) {
               <Amenities />
               <Media />
             </article>
-            {/* <aside className='hidden pt-4 md:block'>
+            <aside className='hidden pt-4 md:block'>
               <div className='top-52 py-8 md:sticky'>
                 <h4 className='inline-block translate-x-4 translate-y-4 rounded-md border-4 border-background bg-secondary p-2 px-6 pl-4 text-2xl font-bold'>
-                  {convertToLocaleString(room.pricePerNight, lang)} / Night
+                  2,500 / Night
                 </h4>
                 <div className='rounded-md bg-secondary/50 px-2 py-6'>
-                  <Booking
-                  lang={lang}
-                  unitNumber={Number(roomUnitNumber)}
-                  unitCategory={roomCategory}
-                  pricePerNight={room.pricePerNight}
-                />
+                  {/* <Booking
+                    lang={lang}
+                    unitNumber={Number(roomUnitNumber)}
+                    unitCategory={roomCategory}
+                    pricePerNight={room.pricePerNight}
+                  /> */}
                 </div>
               </div>
-            </aside> */}
+            </aside>
           </Content>
         </Container>
-        {/* <Container className='py-5 lg:py-20'>
+        <div className='overflow-hidden w-[100vw] max-w-[var(--max-w-container)] mx-auto'>
           <Trending
             items={trendingRooms}
             lang={lang}
             title='Trending now'
             description='See these other options and reserve today'
           />
-        </Container> */}
+        </div>
       </Main>
     </>
   )
