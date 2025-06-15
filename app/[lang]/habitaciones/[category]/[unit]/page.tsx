@@ -3,8 +3,6 @@ import { FaShareNodes } from '@/components/icons'
 import { Container, Content, Main } from '@/components/layout'
 import { Trending } from '@/components/site/home'
 import { Amenities, Description, Features, Media } from '@/components/site/Room'
-import { ReservationDialogForm } from '@/components/site/Room/ReservationDialogForm'
-import { Header } from '@/components/site/rooms/Header'
 import { GoBack } from '@/components/ui/backBtn'
 import { Button } from '@/components/ui/button'
 import { Locale } from '@/i18n-config'
@@ -51,55 +49,56 @@ export default async function Page({ params }: LayoutProps) {
           </div>
         </Content>
       </header>
-      <Container>
-        <Content className='py-0!'>
-          <div className='grid grid-cols-4 grid-rows-2 gap-1 p-2'>
-            <figure className='col-span-2 row-span-2 aspect-square rounded-lg bg-pink-500'></figure>
-            <figure className='col-start-3 col-end-5 rounded-lg bg-purple-500'></figure>
-            <figure className='col-start-3 col-end-4 row-start-2 row-end-3 rounded-lg bg-orange-500'></figure>
-            <figure className='col-start-4 col-end-5 rounded-lg bg-yellow-500'></figure>
-          </div>
-        </Content>
-      </Container>
-      <Container>
-        <Content className='grid grid-cols-1 gap-10 p-2 md:grid-cols-[2fr_1fr]'>
-          <article className='flex flex-col items-center justify-center gap-10 lg:gap-20'>
-            <div className='flex w-full items-center justify-start pt-3'>
-              <Button size='icon' variant='outline'>
-                <FaShareNodes />
-              </Button>
+      <Main>
+        <Container>
+          <Content className='py-0!'>
+            <div className='grid grid-cols-4 grid-rows-2 gap-1 p-2'>
+              <figure className='col-span-2 row-span-2 aspect-square rounded-lg bg-pink-500'></figure>
+              <figure className='col-start-3 col-end-5 rounded-lg bg-purple-500'></figure>
+              <figure className='col-start-3 col-end-4 row-start-2 row-end-3 rounded-lg bg-orange-500'></figure>
+              <figure className='col-start-4 col-end-5 rounded-lg bg-yellow-500'></figure>
             </div>
-            <Features />
-            <Description />
-            <Amenities />
-            <Media />
-          </article>
-          <aside className='hidden pt-4 md:block'>
-            <div className='top-52 py-8 md:sticky'>
-              <h4 className='inline-block translate-x-4 translate-y-4 rounded-md border-4 border-background bg-secondary p-2 px-6 pl-4 text-2xl font-bold'>
-                {/* {convertToLocaleString(room.pricePerNight, lang)} / Night */}
-              </h4>
-              <div className='rounded-md bg-secondary/50 px-2 py-6'>
-                {/* <Booking
+          </Content>
+        </Container>
+        <Container>
+          <Content className='grid grid-cols-1 gap-10 p-2 md:grid-cols-[2fr_1fr]'>
+            <article className='flex flex-col items-center justify-center gap-10 lg:gap-20'>
+              <div className='flex w-full items-center justify-start pt-3'>
+                <Button size='icon' variant='outline'>
+                  <FaShareNodes />
+                </Button>
+              </div>
+              <Features />
+              <Description />
+              <Amenities />
+              <Media />
+            </article>
+            <aside className='hidden pt-4 md:block'>
+              <div className='top-52 py-8 md:sticky'>
+                <h4 className='inline-block translate-x-4 translate-y-4 rounded-md border-4 border-background bg-secondary p-2 px-6 pl-4 text-2xl font-bold'>
+                  {/* {convertToLocaleString(room.pricePerNight, lang)} / Night */}
+                </h4>
+                <div className='rounded-md bg-secondary/50 px-2 py-6'>
+                  {/* <Booking
                   lang={lang}
                   unitNumber={Number(roomUnitNumber)}
                   unitCategory={roomCategory}
                   pricePerNight={room.pricePerNight}
                 /> */}
+                </div>
               </div>
-            </div>
-          </aside>
-        </Content>
-      </Container>
-      <Container className='py-5 lg:py-20'>
-        <Trending
-          items={trendingRooms}
-          lang={lang}
-          title='Trending now'
-          description='See these other options and reserve today'
-        />
-      </Container>
-      <Main>Category Found: {category}</Main>
+            </aside>
+          </Content>
+        </Container>
+        <Container className='py-5 lg:py-20'>
+          <Trending
+            items={trendingRooms}
+            lang={lang}
+            title='Trending now'
+            description='See these other options and reserve today'
+          />
+        </Container>
+      </Main>
     </>
   )
 }

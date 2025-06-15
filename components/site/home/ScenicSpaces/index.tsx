@@ -39,7 +39,7 @@ export function ScenicSpaces() {
             </div>
           </div>
           <Image
-            src={images[0]}
+            src={images[11]}
             alt='Rooms Interior'
             fill
             className='object-cover'
@@ -59,7 +59,7 @@ export function ScenicSpaces() {
             </div>
           </div>
           <Image
-            src={images[3]}
+            src={images[4]}
             alt='Rooftop Interior'
             fill
             className='object-cover'
